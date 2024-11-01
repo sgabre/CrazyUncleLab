@@ -1,7 +1,7 @@
 
 # Orbit
 
- The Orbit Module find orbital parameters from given 
+ The Orbit Module find orbital elements from given 
 - vector position and velocity,
 - Apoasis & Periapsis.
 
@@ -37,3 +37,20 @@ d. The sign of $\Delta t$ should always be the same as the sign of x.
 
 On debugging mode, the values of x, $\Delta t$  (calculated), and dt/dx for each iteration are logs. 
 If the algorithm do not converge in 50 iterations, a message is display/logs and go to the next data set. 
+
+When the position & velocity is given, to dermine the orbital elements, the following step are follow
+1. Determine the angular momentum vector ($\vec{h}$)
+2.  Determine the node vector ($\vec{n}$)
+3.  Determine the eccentricity vector ($\vec{e}$)
+4.  Determine the inclination($i$)
+5.  Determine the longitude of the ascending node ($\Omega$)
+6.  Determine the argument of periapsis ($\omega$)
+7.  Determine the semi-major axis ($a$)
+8.  Determine the Semi-latus rectum ($p$)
+9.  Determine the time of periapsis passage ($?$)
+10. Determine the longitude of periapsis ($\Pi$)
+11. Determine the true anomaly at epoch ($\nu_o$)
+12. Determine the argument of latitude at epoch ($u_o$)
+13. Determine the True longitude at epoch ($l_o$)
+14. Determine the mean anomaly at epoch ($M_o$)
+
