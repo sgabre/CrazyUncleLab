@@ -22,7 +22,7 @@ Tools used in this project can be found under the following URLs:
 * [Exception](https://www.throwtheswitch.org/cexception)
 * Compilators
 
-The architecture in this project is base ont the Appendix D of the Fundamentals of Astrodynamics - Bate, Mueller, and White
+The architecture in this project is base on the Appendix D of the Fundamentals of Astrodynamics - Bate, Mueller, and White
 
 The structure of the sky project is as follows:
 
@@ -80,12 +80,17 @@ Note:
 
 The Track module compute also the Horizontal components (Azimuth, Elevation) when the Right Ascension and the declination of a start is given.
 
-Orbit Module
+[Orbit Module](https://github.com/sgabre/CrazyUncleLab/blob/main/SoftwareProduct/Orbit/documentation/Orbit.md) 
 -----------------
+
+This Module group the Predict Module and Kepler Module from the project description from the the Fundamentals of Astrodynamics - Bate, Mueller, and White - Appendix D
 
 The Orbit Module find orbital parameters from given 
 - vector position and velocity,
 - Apoasis & Periapsis.
+- determines the Estimate time of Arrival (ETA) at a position 
+- determines the position and velocity vectors after an interval of time.
+- The position and velocity vectors of a satellite at a particular instant of time is given
 
 The Predict Module find:
 
