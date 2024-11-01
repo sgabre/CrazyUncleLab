@@ -26,7 +26,7 @@ To determine when convergence has occurred, use
 
 $D_{11} = \sin{(\lambda)}\cdot \cos{(\theta)}$
 
-$ | \frac{Delta t - Delta t_n}{Delta t} | <= 10^-7$
+$  \left | \frac{\Delta t - \Delta t_n}{\Delta t}  \right | \geq 10^{-7} $
 
 where $Delta t$ is the given time interval and it is compared to the calculated &Delta t_n$. 
 
