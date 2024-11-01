@@ -4,6 +4,7 @@
 ## P-iteration Method
 
 ($\vec{V_1}$, $\vec{V_2}$) := P-iteration Function ($\vec{R_1}$, $\vec{R_2}$, $\Delta t$  )
+
 1. Evaluate the constant $k$, $l$, $m$ from $\vec{R_1}$, $\vec{R_2}$ and $\Delta \nu$ using equation 5.4.4
 2. Determine the limits on the value $p$ by evaluating $p_i$ and $p_{ii}$ from equation 5.4.14 and 5.4.15
 3. Pick up a trial value of $p$  within the appropriate limits
