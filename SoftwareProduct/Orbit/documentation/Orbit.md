@@ -38,6 +38,8 @@ d. The sign of $\Delta t$ should always be the same as the sign of x.
 On debugging mode, the values of x, $\Delta t$  (calculated), and dt/dx for each iteration are logs. 
 If the algorithm do not converge in 50 iterations, a message is display/logs and go to the next data set. 
 
+## Orbit from the position & velocity vector
+
 When the position & velocity is given, to dermine the orbital elements, the following step are follow
 1. Determine the angular momentum vector ($\vec{h}$)
 2.  Determine the node vector ($\vec{n}$)
@@ -53,4 +55,61 @@ When the position & velocity is given, to dermine the orbital elements, the foll
 12. Determine the argument of latitude at epoch ($u_o$)
 13. Determine the True longitude at epoch ($l_o$)
 14. Determine the mean anomaly at epoch ($M_o$)
+
+## Orbit from the 3 positions  vector
+
+1. Check if it is Coplanar vector
+
+$\vec{R_1} \cdot \vec{R_2} \times \vec{R_3} = 0$
+
+2. ?
+
+$\vec{D} = (\vec{R_1} \times \vec{R_2} ) + (\vec{R_2}$
+
+3. ?
+
+$\vec{N} = R_3(\vec{R_1} \times \vec{R_2} ) + R_1(\vec{R_2} \times \vec{R_3}) + R_2( \vec{R_3} \times \vec{R_1})$
+
+4. ?
+
+$\vec{S} = (R_2 - R_3)\vec{R_1}  +(R_3 - R_1)\vec{R_2} +(R_1 - R_2) \vec{R_3}$
+
+5. Check if $D \neq 0$, $N \neq 0$ and $\vec{D} \cdot \vec{N} > 0$
+
+6.  ?
+
+$p = \frac{N}{D}$
+
+7.  ?
+
+$e = \frac{S}{D}$
+
+9.  ?
+
+$T = 2\pi \sqrt{\frac{a^3}{\mu}}$
+
+10.  ?
+
+$\vec{Q} = \frac{\vec{S}}{S} = - 0.963\vec{J} - 0.270\vec{K}$
+
+11.  ?
+
+$\vec{W} = \frac{\vec{N}}{N} $
+
+12.  ?
+
+$\vec{P} = \vec{Q} \times \vec{W} $
+
+13.  
+
+$\vec{B} = \vec{D} \times \vec{R_2} $
+
+14. ?
+
+$L = \frac{1}{\sqrt{DN}}$
+
+15. ?
+
+ $\vec{V_2} = \frac{L}{R_2} \vec{B} + L \vec{S} $
+
 
