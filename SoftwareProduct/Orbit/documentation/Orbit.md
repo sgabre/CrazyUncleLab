@@ -41,20 +41,55 @@ If the algorithm do not converge in 50 iterations, a message is display/logs and
 ## Orbit from the position & velocity vector
 
 When the position & velocity is given, to dermine the orbital elements, the following step are follow
+
 1. Determine the angular momentum vector ($\vec{h}$)
+
+$\vec{h} = \vec{R} \times \vec{V}$
+
 2.  Determine the node vector ($\vec{n}$)
+
+$\vec{n} = \vec{K} \times \vec{h} = - h_J \vec{I} + h_I \vec{J} $
+
 3.  Determine the eccentricity vector ($\vec{e}$)
+
+$\vec{e} = \frac{1}{\mu} \left ( \left ( v^2 - \frac{\mu}{r}\right ) \vec{r} - \left ( \vec{r} \cdot \vec{v} \right )\vec{v} \right )$
+
 4.  Determine the inclination($i$)
+
+ $\cos{i} = \frac{h_K}{|\vec{h}|}$
+
 5.  Determine the longitude of the ascending node ($\Omega$)
+
+$\cos{\Omega} = \frac{n_I}{|\vec{n}|}$
+
 6.  Determine the argument of periapsis ($\omega$)
+
+$\cos{\omega} = \frac{ \vec{n} \cdot \vec{e}}{|\vec{n}||\vec{e}|}$
+
 7.  Determine the semi-major axis ($a$)
 8.  Determine the Semi-latus rectum ($p$)
+
+$p = a (1 - e^2)$
+
 9.  Determine the time of periapsis passage ($?$)
+
+
+
 10. Determine the longitude of periapsis ($\Pi$)
-11. Determine the true anomaly at epoch ($\nu_o$)
-12. Determine the argument of latitude at epoch ($u_o$)
-13. Determine the True longitude at epoch ($l_o$)
-14. Determine the mean anomaly at epoch ($M_o$)
+
+$\Pi = \Omega + \omega$
+ 
+12. Determine the true anomaly at epoch ($\nu_o$)
+13. Determine the argument of latitude at epoch ($u_o$)
+14. Determine the True longitude at epoch ($l_o$)
+15. Determine the mean anomaly at epoch ($M_o$)
+
+
+
+
+
+   
+
 
 ## Orbit from the 3 positions  vector
 
