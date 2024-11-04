@@ -38,7 +38,7 @@ d. The sign of $\Delta t$ should always be the same as the sign of x.
 On debugging mode, the values of x, $\Delta t$  (calculated), and dt/dx for each iteration are logs. 
 If the algorithm do not converge in 50 iterations, a message is display/logs and go to the next data set. 
 
-## Orbit from the position & velocity vector
+## Orbit from state vectors 
 
 When the position & velocity is given, to dermine the orbital elements, the following step are follow
 
@@ -66,7 +66,16 @@ $\cos{\Omega} = \frac{n_I}{|\vec{n}|}$
 
 $\cos{\omega} = \frac{ \vec{n} \cdot \vec{e}}{|\vec{n}||\vec{e}|}$
 
+
+
+7. Specific orbital energy
+
+$\epsilon = -\frac{1}{2}\frac{\mu^2}{h^2}\left( 1-e^2\right)$
+
 7.  Determine the semi-major axis ($a$)
+
+$a = -\frac{\mu}{2\epsilon}$
+
 8.  Determine the Semi-latus rectum ($p$)
 
 $p = a (1 - e^2)$
@@ -80,8 +89,23 @@ $p = a (1 - e^2)$
 $\Pi = \Omega + \omega$
  
 12. Determine the true anomaly at epoch ($\nu_o$)
-13. Determine the argument of latitude at epoch ($u_o$)
+
+$\cos{\nu} = \frac{\vec{e}\cdot\vec{R}}{|\vec{e}| \cdot|\vec{R}|}$
+
+if $\vec{R} \cdot \vec{V} < 0$ then replace $\nu = 2π − \nu$
+
+13. Determine the argument of latitude at epoch ($U_o$)
+
+$\cos{(U_o)} = \frac{\vec{n}\cdot\vec{R}}{|\vec{n}| \cdot|\vec{R}|}$
+
+if $R_z < 0$ then replace $U_o = 2 \pi − U_o$
+
 14. Determine the True longitude at epoch ($l_o$)
+
+$\cos{(l_o)} = \frac{R_x}{|\vec{R}|}$
+
+if $V_x > 0$ then replace $l_o = 2 \pi − l_o$
+
 15. Determine the mean anomaly at epoch ($M_o$)
 
 
