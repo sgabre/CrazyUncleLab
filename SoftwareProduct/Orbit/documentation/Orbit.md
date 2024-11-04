@@ -109,27 +109,21 @@ if $V_x > 0$ then replace $l_o = 2 \pi − l_o$
 15. Determine the mean anomaly at epoch ($M_o$)
 
 
-
-
-
-   
-
-
 ## Orbit from the 3 positions  vector
 
 1. Check if it is Coplanar vector
 
 $\vec{R_1} \cdot \vec{R_2} \times \vec{R_3} = 0$
 
-2. ?
+2. Determine the Denominator Vector ($\vec{D}$)
 
 $\vec{D} = (\vec{R_1} \times \vec{R_2} ) + (\vec{R_2}$
 
-3. ?
+3. Determine the Numerator Vector ($\vec{N}$)
 
 $\vec{N} = R_3(\vec{R_1} \times \vec{R_2} ) + R_1(\vec{R_2} \times \vec{R_3}) + R_2( \vec{R_3} \times \vec{R_1})$
 
-4. ?
+4. Determine the S Vector ($\vec{S}$)
 
 $\vec{S} = (R_2 - R_3)\vec{R_1}  +(R_3 - R_1)\vec{R_2} +(R_1 - R_2) \vec{R_3}$
 
@@ -147,28 +141,29 @@ $e = \frac{S}{D}$
 
 $T = 2\pi \sqrt{\frac{a^3}{\mu}}$
 
-10.  ?
+10.  Determine the Q Vector ($\vec{Q}$)
 
 $\vec{Q} = \frac{\vec{S}}{S} = - 0.963\vec{J} - 0.270\vec{K}$
 
-11.  ?
+11.  Determine the W Vector ($\vec{W}$)
 
 $\vec{W} = \frac{\vec{N}}{N} $
 
-12.  ?
+12.  Determine the P Vector ($\vec{P}$)
 
 $\vec{P} = \vec{Q} \times \vec{W} $
 
-13.  
+13.  Determine the B Vector ($\vec{B}$)
 
 $\vec{B} = \vec{D} \times \vec{R_2} $
 
-14. ?
+14. Determine the L Vector ($L$)
 
 $L = \frac{1}{\sqrt{DN}}$
 
-15. ?
+15. Determine the Velocity Vector($V_2$)
 
  $\vec{V_2} = \frac{L}{R_2} \vec{B} + L \vec{S} $
 
 
+## Orbit from the 2 positions vector
