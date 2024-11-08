@@ -189,6 +189,114 @@ $\cos{\beta} = \frac{\sin{L_t} - \sin{L_o} \cos{\Lambda}} {\cos{L_o}\sin{\Lambda
 
 2.  Velocity Change
 
-3. 
+## Advance Transfer to another Planet
 
+### Porkchop selection
+
+### Maximal Arrival Time
+
+## Hohmann Transfer 
+
+### at optimum time
+
+
+### at next periapsis
+
+### at next apoapsis
+
+### after a fixed time of XX seconds
+
+###  at a altitude of XX m
+
+### at a equatorial DN
+
+### at a equatorial AN
+
+### at the nearest AN/DN with the target
+
+### at the next DN with the target
+
+### at a AN with the target
+
+### at a Closest approach to target
+
+## Change Apopasis 
+
+### at the next Periapsis
+
+### at the next Apopasis
+
+###  after a fixed time of XX seconds
+
+### at the equatorial DN
+
+### at the equatorial AN
+
+## Change Periapsis 
+
+### at the next Periapsis
+
+###  at the next Apopasis
+
+###  after a fixed time of XX seconds
+
+## Change Apsis (Ap= and Pe = )
+
+## Change Inclinaison 
+
+### at the cheapest equatorial AN/DN
+
+###  at the nearest equatorial AN/DN
+
+### at the equatorial DN
+
+###  at the equatorial AN
+
+### after a fixed time of XX seconds
+
+## Change longitude of ascending node
+
+### at the next Apoasis
+
+###  at the next Periapsis
+
+### after a fixed time of XX seconds
+
+## Change Semi-Major Axis 
+
+### at the next Apoasis
+
+### at the next Periapsis
+
+### after a fixed time of XX seconds
+
+## Change Surface surface longitude of  apsis 
+
+### at the next Apoasis
+
+### at the next Periapsis
+
+## Circularize 
+
+### at the next Apoasis 
+
+###  at the next Periapsis
+
+###  at an Altitude
+
+###  after a fixed time of XX seconds
+
+## Fine tune the closest approch to target (distance of )
+
+## Return from a moon at XX periapsis
+
+## Transfert to another planet
+
+## Resonant orbit 
+
+### at the next Apoasis
+
+### at the next Periapsis
+
+### after a fixed time of XX seconds
 
