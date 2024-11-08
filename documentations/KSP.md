@@ -1,9 +1,6 @@
 # Timeline
 
-## Kerbin-Duna 
-1. Departure to Duna(60 km) From Kerbin(100km)   @ Year 1, day 231 at 0:14:24.
-2. Plan Change for Kerbin-Duna transfer          @ Year 1, day 343 at 3:45:06.
-3. Arrival at Duna(60 km) From Kerbin(100km)      @ Year 2, day 75 at 5:00:00.
+**Note:** 1 Year = 426.08 Days
 
 ## Kerbin-Moho 
 
@@ -12,16 +9,28 @@
 3. Departure to Kerbin(0km) From Moho(20 km)     @ Year 2, day 54 at 1:00:00
 4.  Arrival  at Kerbin(0 km) From Moho(20 km)     @ Year 2, day 128 at 2:48:00
 
+## Kerbin-Eve 
+
+1. Departure to Eve(100 km) From Kerbin(100km)   @ Year 2, day 160 at 0:14:24
+2. Arrival   at Eve(100 km) From Kerbin(100km)   @ Year 2, day 357 at 1:58:48
+3. Departure to Kerbin(0km) From Eve(100 km)     @ Year 4, day 8 at 0:14:24
+4. Arrival   at Kerbin(0km) From Eve(100 km)     @ Year 4, day 234 at 5:49:12
+
+## Kerbin-Duna 
+1. Departure to Duna(60 km) From Kerbin(100km)   @ Year 1, day 231 at 0:14:24.
+2. Plan Change for Kerbin-Duna transfer          @ Year 1, day 343 at 3:45:06.
+3. Arrival at Duna(60 km) From Kerbin(100km)     @ Year 2, day 75 at 5:00:00.
+4. Departure to Kerbin(0 km) From Duna(60 km)    @ Year 3, day 242 at 0:39:36
+5. Arrival at Kerbin(0 km) From Duna(60 km)      @ Year 4, day 80 at 5:10:48
+
 ## Kerbin-Dres  
 
 1. Departure to Dres(12 km) From Kerbin(100km)   @ Year 1, day 390 at 0:28:48
 2. Plan Change for Kerbin-Dres transfer          @ Year 2, day 170 at 3:57:45
-3. Arrival  at Dres(12 km)  From Kerbin(100km)    @ Year 3, day 91 at 1:58:48
+3. Arrival  at Dres(12 km)  From Kerbin(100km)   @ Year 3, day 91 at 1:58:48
+4. Departure to Kerbin(0km) From Dres(12 km)          @ Year 5, day 290 at 2:54:00
+5. Arrival  at Kerbin(0 km) From Dres(20 km)     @ Year 7, day 156 at 3:19:12
 
-## Kerbin-Eve 
-
-1. Departure to Eve(100 km) From Kerbin(100km)   @ Year 2, day 160 at 0:14:24
-2. Arrival   at Eve(100 km) From Kerbin(100km)    @ Year 2, day 357 at 1:58:48
 
 ## Kerbin-Jool
 
