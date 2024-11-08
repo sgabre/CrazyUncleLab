@@ -100,6 +100,50 @@ $\Delta V_o = V_{txo} - V_o$
 
 $\Delta V_T = \Delta V_o + \Delta V_t$
 
+## Apsis Change (Apoapsis)
+
+1. Origin Semi-Major Axis
+
+$a_{o} = \frac{R_{ao} + R_{po}}{2}$
+
+3. Transfer Semi-Major Axis
+
+$a_{tx} = \frac{R_{ao} + R_{pt}}{2}$
+
+4. Orbital Velocity @ the Origin Burn Point
+
+$V_{o} = \sqrt{\mu \left(\frac{2}{R_{ao}} -\frac{1}{a_{o}}\right )}$
+
+5. Transfer velocity @ the Origin Burn Point
+
+$V_{txt} = \sqrt{\mu \left(\frac{1}{R_{ao}} - \frac{2}{a_{tx}}\right )}$
+
+6. Velocity Change @ the Origin Burn Point
+
+$\Delta V_o = V_{txo} - V_o$
+
+
+## Apsis Change (Periapsis)
+
+1. Origin Semi-Major Axis
+
+$a_{o} = \frac{R_{ao} + R_{po}}{2}$
+
+3. Transfer Semi-Major Axis
+
+$a_{tx} = \frac{R_{at} + R_{po}}{2}$
+
+4. Orbital Velocity @ the Origin Burn Point
+
+$V_{o} = \sqrt{\mu \left(\frac{2}{R_{po}} -\frac{1}{a_{o}}\right )}$
+
+5. Transfer velocity @ the Origin Burn Point
+
+$V_{txt} = \sqrt{\mu \left(\frac{1}{R_{po}} - \frac{2}{a_{tx}}\right )}$
+
+6. Velocity Change @ the Origin Burn Point
+
+$\Delta V_o = V_{txo} - V_o$
 
 ## Ascent/Descent Burn (Draft)
 
