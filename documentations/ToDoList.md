@@ -19,5 +19,34 @@
 - [ ] Add IoT
 - [ ] Add bluetooth
 
+# What i Want to do...
 
+**Note**
+
+I take what i can found on the shelf
+
+## Simple Project for the Nucleo-FR401RE Board
+
+It is a first project using the default setting of the STM32CubeMX
+It just to check if the tools chaine is working properly
+
+## Blinky Software for the Nucleo-FR401RE Board with a Bare Metal System
+
+Using the Simple Project for the Nucleo-FR401RE Board, i want to blink led
+- inside the main loop
+- with a interuption (e.g: every 500 ms)
+
+## Tracy Software for the Nucleo-FR401RE Board with a Bare Metal System
+
+Using the Blinky Project for the Nucleo-FR401RE Board, i want to send data on a Computer Terminal (e.g: Hello Word)
+
+## Blinky Software for the Nucleo-FR401RE Board with a RTOS
+
+Using the Simple Project for the Nucleo-FR401RE Board, i want to blink led
+- inside the main loop
+- with a interuption (e.g: every 500 ms)
+
+## Tracy Software for the Nucleo-FR401RE Board with a RTOS
+
+Using the Blinky Project for the Nucleo-FR401RE Board, i want to send data on a Computer Terminal (e.g: Hello Word)
 
