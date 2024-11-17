@@ -1,6 +1,8 @@
+**Under Developement**
+
 Commandes CLI Bluetooth à Implémenter
 
-# 1. Gestion des appareils Bluetooth
+## 1. Gestion des appareils Bluetooth
 
 	scan on : Active le mode de recherche pour découvrir des appareils.
 
@@ -19,7 +21,7 @@ Vous devrez écouter les événements des appareils détectés (e.g., via hci_le
 
 Retourne une liste avec des informations comme les adresses MAC, noms et RSSI (force du signal).
 
-# 2. Connexion et appairage
+## 2. Connexion et appairage
 
 pair <adresse> : Appaire l'appareil avec l'adresse MAC spécifiée.
 
@@ -35,7 +37,7 @@ Sous Linux, cela correspond à bluetoothctl pair.
 
 	bluetooth> disconnect AA:BB:CC:DD:EE:FF
 
-# 3. Gestion des paramètres
+## 3. Gestion des paramètres
 
 	status : Affiche l’état actuel du Bluetooth (activé/désactivé, appareils connectés, etc.).
 
@@ -49,7 +51,7 @@ Sous Linux, cela correspond à bluetoothctl pair.
 
 	bluetooth> set alias MonBluetooth
 
-# 4. Services et profils
+## 4. Services et profils
 
 	services <adresse> : Liste les services disponibles sur un appareil.
 
@@ -65,7 +67,7 @@ Pour BLE, cela peut inclure la liste des UUID GATT.
 
 	bluetooth> gatt write 0x0025 0x01
 
-# 5. Suppression et réinitialisation
+## 5. Suppression et réinitialisation
 
 	unpair <adresse> : Supprime l’appairage avec un appareil.
 	
@@ -95,7 +97,7 @@ Fonctionnalités Avancées
  	bluetooth> stop advertising
 
 
-# 6. Commandes pour le profil FTP (File Transfer Profile)
+## 6. Commandes pour le profil FTP (File Transfer Profile)
 	
 Les commandes suivantes permettent de gérer les opérations FTP (obtenir, envoyer, lister des fichiers, etc.) en utilisant OBEX sous Linux ou avec des outils comme obexftp.
 	
@@ -135,7 +137,7 @@ Mettre à jour le répertoire FTP :
 
 Change de répertoire sur le serveur FTP.
 						
-# 7. Commandes pour le profil OPP (Object Push Profile)
+## 7. Commandes pour le profil OPP (Object Push Profile)
 
 Le profil OPP est plus simple que FTP et est principalement utilisé pour envoyer des objets simples comme des vCards ou des images. Vous pouvez utiliser des outils comme obexpushd ou obexftp pour interagir avec OPP.
 
@@ -149,7 +151,7 @@ Recevoir un objet :
 obexftp --bluetooth <adresse_Bluetooth> --get <fichier_objet>
 Télécharge un objet depuis un appareil via OPP.
 
-# 8. Commandes pour le profil SPP (Serial Port Profile)
+## 8. Commandes pour le profil SPP (Serial Port Profile)
 
 Le SPP permet de simuler une connexion série entre deux appareils Bluetooth. Vous pouvez l'utiliser pour envoyer des données sous forme de texte ou de fichiers via un terminal série.
 
@@ -173,7 +175,7 @@ Lire des données depuis un port série SPP :
 cat /dev/rfcomm0
 Lit les données envoyées sur le port série Bluetooth.
 
-# 9. Commandes pour le profil A2DP (Advanced Audio Distribution Profile)
+## 9. Commandes pour le profil A2DP (Advanced Audio Distribution Profile)
 
 Le A2DP est principalement utilisé pour le streaming audio, mais vous pouvez l'utiliser pour envoyer des fichiers audio via Bluetooth.
 
@@ -192,7 +194,7 @@ Contrôler le volume audio Bluetooth :
 pactl set-sink-volume <sink_name> 50%
 Régler le volume du périphérique de sortie Bluetooth.
 
-# 10. Commandes Générales pour le Bluetooth (avec bluetoothctl)
+## 10. Commandes Générales pour le Bluetooth (avec bluetoothctl)
 
 bluetoothctl est un outil très pratique sous Linux pour gérer les connexions Bluetooth. Voici quelques commandes génériques que vous pouvez utiliser pour interagir avec différents profils Bluetooth.
 
@@ -226,7 +228,7 @@ Se déconnecter d'un périphérique Bluetooth :
 disconnect <adresse_Bluetooth>
 Déconnecte un appareil Bluetooth.
 
-# 11. Commandes pour OBEX via obexftp ou obexpushd
+## 11. Commandes pour OBEX via obexftp ou obexpushd
 Démarrer un serveur OBEX (pour recevoir des fichiers) :
 
 obexpushd -B
