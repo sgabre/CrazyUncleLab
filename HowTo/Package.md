@@ -6,6 +6,24 @@
 - which/how/where Software System/Firware/embedded Software shall be generated (Blinky, Tracy, Shelly, Booty, Upgrader, Applications,)
 -  for which board or target shall we generate the software ? (SM32F, STM32H, Nucleo, AWS, other)
 
+# Basic Feature to be implemented 
+
+The following feature shall be implemented for the Bare Metal System, RTOS and linux(Raspberry) Software System
+ - Blinky (GPIO, INT)
+ - Trace
+ - Shell
+ - Error Management
+ - Logger Management
+ - Bootloader
+ - Upgrader
+ - File System
+ - USB
+ - Bluetooth
+ - IoT
+ - scp (secure copy or how to send/get a file to/from the device file system using the serial debug port ?
+ - 
+
+
 Intoduction
 ---------------
 
