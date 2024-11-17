@@ -14,7 +14,7 @@ The "requirements" are defines as following
 For embedded System Software Only
 
 - Software Component shall be compatible with the ARM Keil Pack
-- the <Software Component>_config shall use the [CMSIS Configuration Wizard] (https://sourceforge.net/projects/cmsisconfig/)
+- the `<Software Component>_config` shall use the [CMSIS Configuration Wizard] (https://sourceforge.net/projects/cmsisconfig/)
 - a keil package shall at least contain the sources code (*.h, *c)
 - the project shall delivered the binary, the binary images, configurations & Templates, System Resources.
 
@@ -56,7 +56,7 @@ The structure of the XXXX project is as follows:
 |  \- Backend
 |  \- Frontend
 
-|- build
+|- build (Use to store the ? )
 |  \- pack.json							
 |  |- Configuration					
 |  |  \- Parameters.txt.enc			
@@ -71,12 +71,13 @@ The structure of the XXXX project is as follows:
 |  |- keys								
 |  |  \- Device-<UUID>-key.enc	
 
-|- Delivery
+|- Delivery (Use to store the different package generate: 
 |  \- Debug
-|  |   \- UPKG-<PLATFORM>-<DATE>-<TIME>.zip
-|  |   \- CPKG-<PLATFORM>-<DATE>-<TIME>.zip
-|  |   \- PPKG-<PLATFORM>-<DATE>-<TIME>.zip
-|  |   \- CPKG-<PLATFORM>-<CUID>-<DATE>-<TIME>.zip (For test prupose)
+|  |   \- UPKG-<PLATFORM>-<DATE>-<TIME>.zip (UPKG: Upgrade Package, to upgrade the firmware/software)
+|  |   \- CPKG-<PLATFORM>-<DATE>-<TIME>.zip (CPKG: Configuration Package, to upgrade the device configuraition)
+|  |   \- PPKG-<PLATFORM>-<DATE>-<TIME>.zip (PPKG: Product Package, to upgrade the  firmware & device configuraition)
+|  |   \- CPKG-<PLATFORM>-<CUID>-<DATE>-<TIME>.zip (Configuration Package, for a specific devie only For test prupose)
+|  |   \- DPKG-<PLATFORM>-<CUID>-<DATE>-<TIME>.zip  (DPKG: Delivery Package, to delivery all the artefact for a client )
 |  \- Release
 |  |   \- DPKG-<PLATFORM>-<DATE>-<TIME>.zip
 |  |   \- UPKG-<PLATFORM>-<DATE>-<TIME>.zip
