@@ -52,3 +52,9 @@ Using the Simple Project for the Nucleo-FR401RE Board, i want to blink led
 
 Using the Blinky Project for the Nucleo-FR401RE Board, i want to send data on a Computer Terminal (e.g: Hello Word)
 
+## Shelly Software for the Nucleo-FR401RE Board with a RTOS
+
+Using the Blinky/Tracy Project for the Nucleo-FR401RE Board, i want to have a simple shell with the following command-in-line at minima
+- info/version/ver: to get the board information and the software version
+- reboot: to reboot the software
+
