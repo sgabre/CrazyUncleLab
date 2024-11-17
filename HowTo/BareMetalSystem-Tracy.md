@@ -13,6 +13,8 @@ When the Button B1 is press, then the message "Button B1 has been press".
 When a error occurs a message is sent over the Debug Port/ITM, the message have the followig format
 
 - "Error <#Error>, occurs on <fileName> @ line <#Lines>."
+- "On INT <InterruptionShortName>, Error <#Error>, occurs on <fileName> @ line <#Lines>."
+- "On <TaskName>, Error <#Error>, occurs on <fileName> @ line <#Lines>."
 
 This message can be send over Debug Port/ITM or logs in a files.
 
