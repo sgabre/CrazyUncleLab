@@ -22,6 +22,8 @@ The following feature shall be implemented for the Bare Metal System, RTOS and l
  - IoT
  - scp (secure copy or how to send/get a file to/from the device file system using the serial debug port ?
  - sqlite
+ - CLib (FIFO, List, Final State Machine, Heap, Assert/Error,  Logs, ...)
+ - Python Terminal (be able to run a CLI on the target and get the output Kind of the driver)
 
 
 Intoduction
