@@ -1,9 +1,7 @@
 # Blinky Software on a Bare Metal System
 
-Using the Simple Project for the Nucleo-FR401RE Board, i want to blink led
-
-inside the main loop
-with a interuption (e.g: every 500 ms)
+Creating "blinky" software, which makes an LED blink on a bare-metal system, is a classic first step in embedded programming. 
+This simple task demonstrates control over GPIO (General-Purpose Input/Output) pins and the ability to create time delays. 
 
 ## Features
 
