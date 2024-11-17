@@ -1,3 +1,10 @@
+# Open question
+
+- How to define the structure of the Software System/Firware/embedded Software ?
+- how to generate/uppack the different Package . (UPKG,CPKG, PPKG, DPKG, SPKG, Software Component, Board Component Pack)
+- how to integrete/use the Keil Pack into STM32CubeMX ?
+- which/how/where Software System/Firware/embedded Software shall be generated (Blinky, Tracy, Shelly, Booty, Upgrader, Applications,)
+-  
 
 Intoduction
 ---------------
