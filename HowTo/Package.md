@@ -21,7 +21,7 @@ The following feature shall be implemented for the Bare Metal System, RTOS and l
  - Bluetooth
  - IoT
  - scp (secure copy or how to send/get a file to/from the device file system using the serial debug port ?
- - 
+ - sqlite
 
 
 Intoduction
