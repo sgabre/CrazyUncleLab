@@ -11,7 +11,8 @@ When the Button B1 is press, then the message "Button B1 has been press".
 **Extention** (Not Implemeted in this version, it will be see on the Error Managements )
 
 When a error occurs a message is sent over the Debug Port/ITM, the message have the followig format
-"Error <#Error>, occurs on <fileName> @ line <#Lines>."
+
+- "Error <#Error>, occurs on <fileName> @ line <#Lines>."
 
 This message can be send over Debug Port/ITM or logs in a files.
 
