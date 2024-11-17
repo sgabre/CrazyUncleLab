@@ -71,7 +71,7 @@ The default structure when you are using STM32CubeMX is as follows:
 
 ### First Release (Loopy)
 
-When the counter is equalt to 65000, the LED2 Change his state (On to Off or Off to On)
+When the counter is equal to 65000, the LED2 Change his state (On to Off or Off to On)
 
 ### Second Release (On Interuption)
 
