@@ -5,6 +5,16 @@ Using the Simple Project for the Nucleo-FR401RE Board, i want to blink led
 inside the main loop
 with a interuption (e.g: every 500 ms)
 
+## Features
+
+### First Release (Loopy)
+
+When the counter is equal to 65000, the LED2 Change his state (On to Off or Off to On)
+
+### Second Release (On Interuption)
+
+Every 500 ms, the LED2 Change his state (On to Off or Off to On)
+
 **This Project is direcly derived from Simple Project.**
 
 ## Files
@@ -67,12 +77,4 @@ The default structure when you are using STM32CubeMX is as follows:
 | ------------- | ------------- |------------- | -------------   |
 |2            | PC13          | PC13-ANTI_TAMP| B1 |
 
-## Features
 
-### First Release (Loopy)
-
-When the counter is equal to 65000, the LED2 Change his state (On to Off or Off to On)
-
-### Second Release (On Interuption)
-
-Every 500 ms, the LED2 Change his state (On to Off or Off to On)
