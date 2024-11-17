@@ -26,6 +26,42 @@ The following feature shall be implemented for the Bare Metal System, RTOS and l
  - Python Terminal (be able to run a CLI on the target and get the output Kind of the driver)
 
 
+# How to define the structure of the Software System/Firware/embedded Software ?
+
+The default structure when you are using STM32CubeMX is as follows: 
+
+```
+<Project Name>
+\- STM32F401RE.ioc
+\- STM32F401RETX_FLASH.ld
+\- STM32F401RETX_RAM.ld
+|- Core
+|  \- Inc
+|  \- Src
+|  \- Startup 
+|- Drivers
+|  |- CMSIS
+|  |  \- Device
+|  |  \- Include
+|  \- STM32F4xx_HAL_Driver
+|  |  \- Inc
+|  |  \- Src
+|- FATFS
+|  \- App
+|  \- Target
+|- MBEDTLS
+|  \- App
+|- Middlewares/
+|  \- Third_Party
+|  |  \- FatFs
+|  |  \- FreeRTOS
+|  |  \- mbedTLS
+
+
+```
+
+
+
 Intoduction
 ---------------
 
