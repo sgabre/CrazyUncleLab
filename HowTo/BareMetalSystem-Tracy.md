@@ -4,15 +4,18 @@
 
 ## Features
 
-### First Release (Loopy)
+Be able to send some trace over the Debug Port or ITM.
 
-When the counter is equal to 65000, the LED2 Change his state (On to Off or Off to On)
+When the Button B1 is press, then the message "Button B1 has been press".
 
-### Second Release (On Interuption)
+**Extention** (Not Implemeted in this version, it will be see on the Error Managements )
 
-Every 500 ms, the LED2 Change his state (On to Off or Off to On)
+When a error occurs a message is sent over the Debug Port/ITM, the message have the followig format
+"Error <#Error>, occurs on <fileName> @ line <#Lines>."
 
-**This Project is direcly derived from Simple Project.**
+This message can be send over Debug Port/ITM or logs in a files.
+
+This message can be store on the "Special recovery Memory"
 
 ## Files
 
