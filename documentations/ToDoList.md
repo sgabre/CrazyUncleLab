@@ -10,6 +10,7 @@
 - [ ] Create Tracy Software for the Nucleo-FR401RE Board with RTOS (FreeRTOS)
 - [ ] Create Shelly Software for the Nucleo-FR401RE Board with RTOS (FreeRTOS)
 - [ ] Compile with CMake for the  Nucleo-FR401RE Board
+- [ ] Document the source code with docoxygen (the architecture shall be documented use module ...) 
 - [ ] Create a shell script to Create a Keil Package (Sotware Component Pack and Board Support Pack )
 - [ ] Create a shell script to Import a Keil Package (Sotware Component Pack and Board Support Pack )
 - [ ] Define The project structure
