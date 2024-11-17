@@ -18,6 +18,8 @@ When a error occurs a message is sent over the Debug Port/ITM, the message have 
 
 This message can be send over Debug Port/ITM or logs in a files.
 
+- Timestamps;Sources;#Error;File;Line
+
 This message can be store on the "Special recovery Memory"
 
 ## Files
