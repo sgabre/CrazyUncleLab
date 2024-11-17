@@ -4,7 +4,7 @@
 - how to generate/uppack the different Package . (UPKG,CPKG, PPKG, DPKG, SPKG, Software Component, Board Component Pack)
 - how to integrete/use the Keil Pack into STM32CubeMX ?
 - which/how/where Software System/Firware/embedded Software shall be generated (Blinky, Tracy, Shelly, Booty, Upgrader, Applications,)
--  
+-  for which board or target shall we generate the software ? (SM32F, STM32H, Nucleo, AWS, other)
 
 Intoduction
 ---------------
