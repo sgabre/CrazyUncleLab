@@ -1,4 +1,4 @@
-# Blinky Software for the Nucleo-FR401RE Board with a Bare Metal System
+# Blinky Software on a Bare Metal System
 
 Using the Simple Project for the Nucleo-FR401RE Board, i want to blink led
 
