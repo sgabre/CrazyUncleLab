@@ -1,5 +1,7 @@
 # To Do List
 
+**Note**: Add the github reference when the item is done 
+
 - [ ] Create Simple Project for the Nucleo-FR401RE Board
 - [ ] Create Blinky Software for the Nucleo-FR401RE Board with a Bare Metal System
 - [ ] Create Tracy Software for the Nucleo-FR401RE Board with a Bare Metal System
