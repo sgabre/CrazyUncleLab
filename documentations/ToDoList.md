@@ -2,7 +2,7 @@
 
 **Note**: Add the github reference when the item is done 
 
-- [ ] Create Simple Project for the Nucleo-FR401RE Board
+- [ ] Create Simple Project for the Nucleo-FR401RE Board [V0.0.0](https://github.com/sgabre/CrazyUncleLab/releases/tag/V0.0.0)
 - [ ] Create Blinky Software for the Nucleo-FR401RE Board with a Bare Metal System
 - [ ] Create Tracy Software for the Nucleo-FR401RE Board with a Bare Metal System
 - [ ] Add FreeRTOS
@@ -28,7 +28,7 @@
 
 I take what i can found on the shelf
 
-## Simple Project for the Nucleo-FR401RE Board
+## Simple Project for the Nucleo-FR401RE Board[V0.0.0](https://github.com/sgabre/CrazyUncleLab/releases/tag/V0.0.0)
 
 It is a first project using the default setting of the STM32CubeMX
 It just to check if the tools chaine is working properly
