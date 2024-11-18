@@ -2,7 +2,7 @@
 
 **Note**: Add the github reference when the item is done 
 
-- [ ] Create Simple Project for the Nucleo-FR401RE Board [V0.0.0](https://github.com/sgabre/CrazyUncleLab/releases/tag/V0.0.0)
+- [X] Create Simple Project for the Nucleo-FR401RE Board [V0.0.0](https://github.com/sgabre/CrazyUncleLab/releases/tag/V0.0.0)
 - [ ] Create Blinky Software for the Nucleo-FR401RE Board with a Bare Metal System
 - [ ] Create Tracy Software for the Nucleo-FR401RE Board with a Bare Metal System
 - [ ] Add FreeRTOS
