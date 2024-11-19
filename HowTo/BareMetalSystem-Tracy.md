@@ -6,7 +6,7 @@
 
 Be able to send some trace over the Debug Port or ITM.
 
-When the Button B1 is press, then the message "Button B1 has been press".
+Every 500 ms, the message "Tick" is send.
 
 **Extention** (Not Implemeted in this version, it will be see on the Error Managements )
 
