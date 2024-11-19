@@ -37,25 +37,22 @@ To connect a Mac OS X system USB port to the console using the built-in OS X Ter
   $> cd /dev
   $> ls -ltr /dev/*usb*
 ```
- 
 
 - Step 4 Connect to the USB port with the following command followed by the router USB port speed:
 
 ```shell
   $> screen /dev/tty.usbmodem1a21 9600
 ```
+
 **Note:**
 To Disconnect the OS X USB Console from the Terminal Window
 Enter Ctrl+A followed by Ctrl+\
 
-```shell
-  $> cd /dev
-  $> ls -ltr /dev/*usb*
-```
-
 # Command-In-Line
 
 ```shell
+$> cd /dev
+$> ls -ltr /dev/*usb*
 $> screen /dev/tty.usbserial-AQ02K49L 115200
 $> screen /dev/cu.usbserial-AQ02K49L 115200
 $> screen/dev/tty.usbmodem11103 115200 (ST-LINK Virtual COM Port)
