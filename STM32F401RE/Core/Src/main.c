@@ -17,7 +17,9 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
+#include <stdio.h>
 #include "main.h"
+#include "retarget.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -89,6 +91,8 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_USART2_UART_Init();
+  RetargetInit(&huart2);
+  uint32_t idx = 0;
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -100,6 +104,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	printf("Tick #%d\r\n", idx++);
 	HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin); // Toggle the LED
 	HAL_Delay(500); // Delay for 500 ms
   }
