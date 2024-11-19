@@ -10,7 +10,7 @@ When the Button B1 is press, then the message "Button B1 has been press".
 
 **Extention** (Not Implemeted in this version, it will be see on the Error Managements )
 
-When a error occurs a message is sent over the Debug Port/ITM, the message have the followig format
+When a error occurs a message is sent over the Debug Port/ITM, the message have the following format
 
 - "Error <#Error>, occurs on <fileName> @ line <#Lines>."
 - "On INT <InterruptionShortName>, Error <#Error>, occurs on <fileName> @ line <#Lines>."
@@ -22,6 +22,45 @@ This message can be send over Debug Port/ITM or logs in a files.
 
 This message can be store on the "Special recovery Memory"
 
+# How to use a Max OS X for connecting through the Virtual COM Port with the Nucleo F401RE Board?
+
+You'll need to get a usb-serial adapter and then connect with a console cable. Adapters aren't very expensive.
+
+Connecting to the Console Port with Mac OS X
+To connect a Mac OS X system USB port to the console using the built-in OS X Terminal utility, follow these steps:
+
+- Step 1 Use the Finder to go to Applications > Utilities > Terminal.
+- Step 2 Connect the OS X USB port to the router.
+- Step 3 Enter the following commands to find the OS X USB port number:
+
+```shell
+  $> cd /dev
+  $> ls -ltr /dev/*usb*
+```
+ 
+
+- Step 4 Connect to the USB port with the following command followed by the router USB port speed:
+
+```shell
+  $> screen /dev/tty.usbmodem1a21 9600
+```
+**Note:**
+To Disconnect the OS X USB Console from the Terminal Window
+Enter Ctrl+A followed by Ctrl+\
+
+```shell
+  $> cd /dev
+  $> ls -ltr /dev/*usb*
+```
+
+# Command-In-Line
+
+```shell
+$> screen /dev/tty.usbserial-AQ02K49L 115200
+$> screen /dev/cu.usbserial-AQ02K49L 115200
+$> screen/dev/tty.usbmodem11103 115200 (ST-LINK Virtual COM Port)
+$> screen /dev/cu.usbmodem11103 115200
+```
 ## Files
 
 The default structure when you are using STM32CubeMX is as follows: 
