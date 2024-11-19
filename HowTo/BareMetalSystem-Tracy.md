@@ -22,7 +22,7 @@ This message can be send over Debug Port/ITM or logs in a files.
 
 This message can be store on the "Special recovery Memory"
 
-# How to use a Max OS X for connecting through the Virtual COM Port with the Nucleo F401RE Board?
+# How to connect a Max OS X with the Nucleo F401RE Board through the Virtual COM Port ?
 
 You'll need to get a usb-serial adapter and then connect with a console cable. Adapters aren't very expensive.
 
