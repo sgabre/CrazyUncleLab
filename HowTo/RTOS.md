@@ -1,4 +1,4 @@
-# How to Configure FreeRTOS Using CubeMX
+# How to Configure FreeRTOS Using CubeMX (Draft)
 
 In SYS, Choose the Timebase source as TIM7
 
