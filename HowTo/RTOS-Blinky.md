@@ -1,4 +1,4 @@
-# Blinky Software on a Bare Metal System
+# RTOS - Blinky Software
 
 "blinky" software, which makes an LED blink on a RTOS, is a classic first step in embedded programming. 
 This simple task demonstrates control over GPIO (General-Purpose Input/Output) pins and the ability to create time delays. 
