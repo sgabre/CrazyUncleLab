@@ -254,3 +254,19 @@ Like heap_4.c, heap_5.c is non-deterministic due to the first-fit algorithm and 
 3. Advanced Debugging Needs
    
 Debugging memory issues can become challenging due to the added complexity of multiple regions and the need to monitor fragmentation across all pools.
+
+## Thread-Safety Option
+
+TBD
+
+## Stack Overflow Detection
+
+TBD
+
+## Debugging Features
+
+TBD
+
+## Logging Features
+
+TBD
