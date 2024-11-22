@@ -21,6 +21,9 @@ Tools used in this project can be found under the following URLs:
 * [Ceedling](https://www.throwtheswitch.org/ceedling)
 * [Exception](https://www.throwtheswitch.org/cexception)
 * Compilators
+* [Doxygen](https://www.doxygen.nl)
+* [GraphViz](https://graphviz.org/download/)
+* [Message Sequence Chart](https://www.mcternan.me.uk/mscgen/)
 
 The architecture in this project is base on the Appendix D of the Fundamentals of Astrodynamics - Bate, Mueller, and White
 
