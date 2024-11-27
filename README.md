@@ -26,6 +26,11 @@ Tools used in this project can be found under the following URLs:
 * [Message Sequence Chart](https://www.mcternan.me.uk/mscgen/)
 * [UML](https://plantuml.com/fr/)
 
+Reference
+
+* State Machine (https://uu.diva-portal.org/smash/get/diva2:1776033/FULLTEXT01.pdf)
+* UML 2.5 (https://www.uml-diagrams.org/uml-25-diagrams.html)
+
 The architecture in this project is base on the Appendix D of the Fundamentals of Astrodynamics - Bate, Mueller, and White
 
 The structure of the sky project is as follows:
