@@ -185,8 +185,8 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.PLL.PLLQ = 7;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
-    //Error_Handler();
-    LOG_ERROR("Impossible to Configure the %s Module", "Oscillator");
+    Error_Handler();
+    //LOG_ERROR("Impossible to Configure the %s Module", "Oscillator");
   }
 
   /** Initializes the CPU, AHB and APB buses clocks
@@ -200,8 +200,8 @@ void SystemClock_Config(void)
 
   if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
   {
-	LOG_ERROR("Impossible to Configure the %s Module", "Clock");
-    //Error_Handler();
+	//LOG_ERROR("Impossible to Configure the %s Module", "Clock");
+    Error_Handler();
   }
 }
 
@@ -230,8 +230,8 @@ static void MX_USART2_UART_Init(void)
   huart2.Init.OverSampling = UART_OVERSAMPLING_16;
   if (HAL_UART_Init(&huart2) != HAL_OK)
   {
-    //Error_Handler();
-    LOG_ERROR("Impossible to Initialization the %s Module", "USART2");
+    Error_Handler();
+    //LOG_ERROR("Impossible to Initialization the %s Module", "USART2");
   }
   /* USER CODE BEGIN USART2_Init 2 */
 

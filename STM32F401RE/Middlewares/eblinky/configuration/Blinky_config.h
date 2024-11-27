@@ -13,7 +13,7 @@
  //   <o.3>   Timer
  //   <o.5>   Event Flags
  // </h>
-#define  	BLINKY_OPTIONS				 3
+#define  	BLINKY_OPTIONS				 0
 #define 	BLINKY_DELAY                 500            /** In ms */
 #define 	BLINKY_NUMBER_OF_ITEM	 	 5
 

@@ -46,7 +46,7 @@ extern "C" {
 
 /* Exported macro ------------------------------------------------------------*/
 /* USER CODE BEGIN EM */
-
+void Error_Handler(void);
 /* USER CODE END EM */
 
 /* Exported functions prototypes ---------------------------------------------*/

@@ -3,6 +3,7 @@
 #include "cmsis_os.h"
 
 #include "OSAL.h"
+#include "Error.h"
 #include "Blinky.h"
 
 typedef struct BlinkyContext_ts
@@ -67,6 +68,7 @@ void Blinky_Task(void *argument)
 #endif
 
 		HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
+		printf("Tick\r\n");
 
 #if (BLINKY_OPTIONS == 1)
 		    }
@@ -105,8 +107,9 @@ void Blinky_Setup(void)
 {
 	printf("Option #%d\r\n", BLINKY_OPTIONS);
 
-
-
+	LOG_DEBUG("Option #%d\r\n", BLINKY_OPTIONS);
+	LOG_ERROR("Option #%d\r\n", BLINKY_OPTIONS);
+	LOG_WARNING("Option #%d\r\n", BLINKY_OPTIONS);
 
 
 #if (BLINKY_OPTIONS == 1)
@@ -129,7 +132,7 @@ void Blinky_Setup(void)
 	mBlinkyContext.TaskID = osalThreadNew(Blinky_DelayTask, NULL, "Blinky_DelayTask-Delay-Task", 128 * 4, osPriorityNormal);
 #endif
 
-#if (BLINKY_OPTIONS != 3)
+#if  (BLINKY_OPTIONS != 3)
 	mBlinkyContext.TaskID = osalThreadNew(Blinky_Task, NULL, "Blinky-Task", 128 * 4, osPriorityNormal);
 #endif
 
