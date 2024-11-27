@@ -48,7 +48,8 @@
 22. Azimuth Driver
 23. Focus Driver
 24. Power Manager
-25. 
+25. Final State Machine / Hirachic State Machine
+26. 
 # What i Want to do...
 
 **Note**
