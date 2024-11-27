@@ -1,0 +1,40 @@
+@startuml
+node MCU [
+Microcontroler
+----
+(STM32F401RE)
+]
+node JTAG
+
+node BLE[
+Bluetooth
+----
+(IDB0xA1)
+]
+frame UI {
+node  n #aliceblue;line:blue;line.dotted;text:blue
+node Button
+node Led
+}
+
+frame Connectivity {
+node  x #aliceblue;line:blue;line.dotted;text:blue
+node  y #aliceblue;line:blue;line.dotted;text:blue
+}
+
+frame Motor {
+node M1 #aliceblue;line:blue;line.dotted;text:blue [
+Elevation Motor
+] 
+node M2 #aliceblue;line:blue;line.dotted;text:blue [
+Azimuth Motor
+] 
+}
+
+MCU =left= JTAG : JTAG
+MCU =up= Button : GPIO(PC13)
+MCU == Led : GPIO(PA5)
+MCU =right= BLE : SPI
+MCU =up= M1 : PWM
+MCU =up= M2 : PWM
+@enduml
