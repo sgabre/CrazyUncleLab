@@ -22,6 +22,32 @@
 - [ ] Add IoT
 - [ ] Add bluetooth
 
+
+1. Blinky (Faire clignote un led)
+2. Instrumentation Trace Macrocell Trace 
+3. Tracy (Envoie un text a traver le debug port et avec un printf)
+4. Error (gestion des errors, assert, hard fault, …)
+5. Shelly 
+6. Bord support package (Nucleo-F401RE)
+7. Bootloader
+8. Upgrader
+9. Production
+10. Application
+11. Memory Management (Local/External RAM/Flash)
+12. File System
+13. Shell File Transfer
+14. Bluetooth
+15. Over-The-Air (OTA)
+16. OTA Shell
+17. Ethernet Driver
+18. Internet Of Think (IOT) 
+19. Power-On Self-Test (MCU,…)
+20. Servo-Motor Driver
+21. Elevation Driver
+22. Azimuth Driver
+23. Focus Driver
+24. Power Manager
+25. 
 # What i Want to do...
 
 **Note**
