@@ -22,6 +22,7 @@
 - [ ] Add IoT
 - [ ] Add bluetooth
 
+# Milestone
 
 1. Blinky (Faire clignote un led)
 2. Instrumentation Trace Macrocell Trace 
