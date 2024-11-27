@@ -4,6 +4,8 @@
 
 Hierarchical State Pattern
 
+Hierarchical State pattern template proposed by Sunitha and Samuel
+
 ``` shell
 @startuml
 
