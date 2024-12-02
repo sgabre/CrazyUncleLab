@@ -7,7 +7,7 @@ TBD
 TBD
 
 ## Hardware Mapping
-
+Microcontroller: STM32F401RE
 ### RCC
 
 |Pin Number     |  Pin Name        | Signal On Pin   | Software Name  |
@@ -24,6 +24,8 @@ TBD
 |46             | PA13          |SYS_JTMS-SWDIO |N/A            |
 |49             | PA14          |SYS_JTCK-SWCLK |N/A            |
 |55             | PB3           |SYS_JTDO-SWO   |N/A            |
+
+
 
 ### Debug Port
 
