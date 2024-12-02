@@ -56,7 +56,29 @@ Microcontroller: STM32F401RE
 |?               | **PA1** or PB6| SPI_CSN       | BLE_SPI_CSN     | 
 |?               | PA6           | SPI_MISO      | BLE_SPI_MISO    | 
 |?               | PA7           | SPI_MOSI      | BLE_SPI_MOSI    | 
-|?               | **PB3** or PA5| SPI_CLK       | BLE_SPI_CLK     |
+|?               | PA5           | SPI_CLK       | BLE_SPI_CLK     |
 |?               | PA8           | BlueNRG_RST   | BLE_RST         | 
 |?               | PA9           | SPI_EEPROM_nS | TBD             | 
+
+
+## I2C
+
+I2C1_SCL PB8 D15 CN5.10
+I2C1_SDA PB9 D14 CN5.9
+
+
+# SPI
+
+SPI1_SCK  PA5 D13 CN5.6
+SPI1_MISO PA6 D12 CN5.5
+SPI1_MOSI PA7 D11 CN5.4
+SPI1_CS   PB6 D10 CN5.3
+
+# UART
+
+USART2_TX PA2 D1 CN9.2
+USART2_RX PA3 D0 CN9.1
+
+
+
 
