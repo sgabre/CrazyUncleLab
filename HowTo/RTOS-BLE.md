@@ -34,12 +34,6 @@ Microcontroller: STM32F401RE
 |16             | PA2           |USART2_TX      |
 |17             | PA3           |USART2_RX      |
 
-### LED
-
-|Pin Number      |  Pin Name     | Signal On Pin |  Software Name  |
-| -------------  | ------------- |------------- |-------------   |
-|21              | PA5           | LED2          | LED2
-
 ### Buttons
 
 |Pin Number      |  Pin Name     | Signal On Pin |  Software Name  |
@@ -48,7 +42,7 @@ Microcontroller: STM32F401RE
 
 
 
-### Buetooth
+### Buetooth (SPI)
 
 |Pin Number      |  Pin Name     | Signal On Pin |  Software Name  | 
 | -------------  | ------------- |-------------  | -------------   | 
@@ -61,23 +55,24 @@ Microcontroller: STM32F401RE
 |?               | PA9           | SPI_EEPROM_nS | TBD             | 
 
 
+
+SPI1_SCK  PA5 D13 CN5.6, 
+
+SPI1_MISO PA6 D12 CN5.5
+
+SPI1_MOSI PA7 D11 CN5.4
+
+SPI1_CS   PB6 D10 CN5.3
+
 ## I2C
 
 I2C1_SCL PB8 D15 CN5.10
 I2C1_SDA PB9 D14 CN5.9
 
 
-# SPI
 
-SPI1_SCK  PA5 D13 CN5.6
-SPI1_MISO PA6 D12 CN5.5
-SPI1_MOSI PA7 D11 CN5.4
-SPI1_CS   PB6 D10 CN5.3
 
-# UART
 
-USART2_TX PA2 D1 CN9.2
-USART2_RX PA3 D0 CN9.1
 
 
 
