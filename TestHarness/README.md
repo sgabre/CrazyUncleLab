@@ -67,24 +67,25 @@ The structure of the Test Harness project is as follows:
 
 Tasks
 ---------------
-[] Bare-Metal-System Basic Project 
-[] Bare-Metal-System Tracy
-[] Bare-Metal-System Shelly
-[] Bare-Metal-System Error
-[] Bare-Metal-System Unit Testing
-[] Bare-Metal-System Component Testing
-[] Bare-Metal-System Integration Testing
-[] Bare-Metal-System System Integration Testing
-[] Bare-Metal-System Board Project 
-[] Build Basic Project (STM32CUbeIDE)
-[] Build Basic Project (CMake)
-[] Build Basic Project (Visual Code)
-[] Build Tracy Project (STM32CUbeIDE)
-[] Build Tracy Project (CMake)
-[] Build Tracy Project (Visual Code)
-[] Build Shelly Project (STM32CUbeIDE)
-[] Build Shelly Project (CMake)
-[] Build Shelly Project (Visual Code)
-[] Build Test Project (STM32CUbeIDE)
-[] Build Test Project (CMake)
-[] Build Test Project (Visual Code)
+
+- [] Bare-Metal-System Basic Project
+- [] Bare-Metal-System Tracy
+- [] Bare-Metal-System Shelly
+- [] Bare-Metal-System Error
+- [] Bare-Metal-System Unit Testing
+- [] Bare-Metal-System Component Testing
+- [] Bare-Metal-System Integration Testing
+- [] Bare-Metal-System System Integration Testing
+- [] Bare-Metal-System Board Project 
+- [] Build Basic Project (STM32CUbeIDE)
+- [] Build Basic Project (CMake)
+- [] Build Basic Project (Visual Code)
+- [] Build Tracy Project (STM32CUbeIDE)
+- [] Build Tracy Project (CMake)
+- [] Build Tracy Project (Visual Code)
+- [] Build Shelly Project (STM32CUbeIDE)
+- [] Build Shelly Project (CMake)
+- [] Build Shelly Project (Visual Code)
+- [] Build Test Project (STM32CUbeIDE)
+- [] Build Test Project (CMake)
+- [] Build Test Project (Visual Code)
