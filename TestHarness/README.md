@@ -30,7 +30,7 @@ Tools used in this project can be found under the following URLs:
 * [Doxygen](https://www.doxygen.nl)
 * [GraphViz](https://graphviz.org/download/)
 * [Message Sequence Chart](https://www.mcternan.me.uk/mscgen/)
-
+* [Code Coverage](https://mcuoneclipse.com/2014/12/26/code-coverage-for-embedded-target-with-eclipse-gcc-and-gcov/)
 The structure of the Test Harness project is as follows:
 
 ```
