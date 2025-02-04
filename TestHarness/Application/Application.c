@@ -4,18 +4,20 @@
 
 #include "DEVICE_IO.h"
 
-#include "iShell.h"
+//#include "iShell.h"
 
 void PowerOnReset_Setup(void)
 {
-	printf("Test Harness - VER: X.X.X - REV: XXXXXXXXXXXXXXX\n");
+	printf("Test Harness - VER: X.X.X - REV: XXXXXXXXXXXXXXX\r\n");
 
-	iShell_Setup();
+	//iShell_Setup();
 
 	//Software Component...
-
+	int i = 0;
 	while(1)
 	{
-		iShell()->Handler();
+		printf("%d\r\n", i++);
+		HAL_Delay(500);
+		//iShell()->Handler();
 	};
 }
