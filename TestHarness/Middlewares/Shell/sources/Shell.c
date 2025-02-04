@@ -1,243 +1,239 @@
-#include <stdarg.h>
-#include <stdbool.h>
-#include <stdint.h>
+#ifdef __cplusplus
+#error This is not C++. Please use a C compiler.
+#endif
+
 #include <string.h>
-#include <stdio.h>
-#include <stdlib.h>
 
 #include "Shell.h"
+#include "Array.h"
 
-// Key codes
-#define END_OF_LINE '\0'
-#define SPACE ' '
-#define TAB '\t'
-#define NEW_LINE '\n'
-#define CARRIAGE_RETURN '\r'
-#define BACK_SPACE '\b'
-#define DELETE '\177'
-#define ESCAPE '\33'
-#define SQUARE_BRACKET_OPEN '\133'
-#define UP_ARROW '\101'
+//FIFO, LIFO, ARRAY, QUEUE, LIST, DLIST,
+// une Zone Memory en RAM ou ROM
+// Iteam = struct , IteamSize =  sizeof(Iteam_ts)
 
-typedef int (*CommandCallBack)(int argc, char **argv);
+//ARRAY
+//Create create, link and initialize l'array 
+//Delate libere les element  l'array 
+//Set copy un iteam a l'index i 
+//Get retourne  une copy d'iteam de l'index i 
+//Count return nombre d'item l'array 
 
-typedef struct ShellCommand_ts
+//FIFO
+//Create create, link and initialize l'FIFO 
+//Delate libere les element  l'FIFO 
+//Push copy un iteam  l index d'ecriture 
+//Pop retourne  une copy d'iteam de l'lecture 
+//Count return nombre d'item dans la FIFO
+
+//LIFO
+//Create create, link and initialize l'LIFO 
+//Delate libere les element  l'LIFO 
+//Push copy un iteam  l index d'ecriture 
+//Pop retourne  une copy d'iteam de l'lecture 
+//Count return nombre d'item dans la LIFO
+
+//LIST
+//Create create, link and initialize l'LIFO 
+//Delate libere les element  l'LIFO 
+//Push copy un iteam  l index d'ecriture 
+//Pop retourne  une copy d'iteam de l'lecture 
+//Count return nombre d'item dans la LIFO
+
+
+#define KEY_BACKSPACE 	 8
+#define KEY_ESC     	 27
+#define KEY_CR			 13	//(carriage return) Key
+#define KEY_TAB		 '\t'
+#define KEY_SPACE		 ' '
+
+static  Command_ts __CMD_BUFFER__[SHELL_COMMAND_SIZE];
+
+//Command_ts *volatile Commands = (Command_ts *)&__CMD_BUFFER__;
+
+typedef struct Shell_ts
 {
-	const char*				Name;
-	const char* 			Help;
-	CommandCallBack 		CallBack;
-} ShellCommand_ts;
+   bool   IsSetup;
+   char   WorkDir[8];
+   Array_ts* Commands;
+} Shell_ts;
+
+static Shell_ts mShell;
 
 
-typedef struct ShellLine_ts
+void mShell_Prompt(void)
 {
-	char    	Buffer[SHELL_MAX_BUFFER_LENGHT];
-	uint16_t   	Position;
-	uint16_t   	Size;
-}ShellLine_ts;
-
-typedef struct ShellContext_ts
-{
-    bool 	IsSetup;
-    bool 	IsEnable;
-    bool    IsExecute;
-    char* 	WorkDirectory;
-    uint8_t CommandIndex;
-    ShellCommand_ts * Commands;
-    int ExecutionStatus;
-}ShellContext_ts;
-
-static ShellContext_ts mShellContext;
-
-static  char  __WORK_DIRECTRY_BUFFER__[SHELL_MAX_COMMANDS_NAME_SIZE];
-
-static  ShellCommand_ts __CMD_TABLE_START__[SHELL_MAX_COMMANDS];
-
-
-static void mShell_Execute(int argc, char **argv);
-
-
-static void mShell_SetDefaultDrive(void)
-{
-  strcpy(mShellContext.WorkDirectory, DEFAULT_DISK);
+   printf("\r\n%s>>", mShell.WorkDir);
 }
 
-static void mShell_Prompt(void)
+void mShell_SetDefaultDrive(void)
 {
-	printf("\r\n%s>>", mShellContext.WorkDirectory);
-}
-
-uint8_t mShell_IsEnable(void)
-{
-	return mShellContext.IsEnable;
-}
-
-static int mShell_ParseLine(char **argv, char *line_buff, int argument_size)
-{
-	 int argc = 0;
-	  int pos = 0;
-	  int length = strlen(line_buff);
-
-	  while (pos <= length)
-	  {
-
-		  if (line_buff[pos] != '\t' && line_buff[pos] != SPACE && line_buff[pos] != END_OF_LINE)
-		  {
-			  argv[argc++] = &line_buff[pos];
-		  }
-
-	    for (; line_buff[pos] != '\t' && line_buff[pos] != SPACE && line_buff[pos] != END_OF_LINE; pos++)
-	    {
-	      ;
-	    }
-
-	    if (line_buff[pos] == '\t' || line_buff[pos] == SPACE)
-	    {
-	      line_buff[pos] = END_OF_LINE;
-	    }
-
-	    pos++;
-
-	  }
-
-	  return argc;
+   strcpy(mShell.WorkDir, SHELL_DEFAULT_DISK);
 }
 
 
-int mShell_Exec(char* aLine)
+
+int mShell_ParseLine(char **argv, char* aStream) 
 {
-  int argc;
+   
+   int argc = 0;
+   int pos = 0;
 
-  // TODO: this takes too much stack space. Optimize!
-  char* argv[SHELL_MAX_NUM_PARAMS];
-
-  // parse the line_buff
-  argc =  mShell_ParseLine(argv, aLine, SHELL_MAX_NUM_PARAMS);
-
-  // execute the parsed commands
-  if (argc > 0)
-  {
-	  mShell_Execute(argc, argv);
-  }
-
-  return mShellContext.ExecutionStatus;
+   // Tokenize the input stream using space as a delimiter
+   char *token = strtok(aStream, " ");
+   
+   while ( (token != NULL) && (argc < (SHELL_MAX_ARGS - 1)  ) )
+   {
+      argv[argc++] = token;   // Store token
+      token = strtok(NULL, " ");
+   }
+   
+   argv[argc] = NULL;
+   return argc;
 }
 
-static void mShell_Execute(int argc, char **argv)
+static int mShell_Search(void const *aData, void* aUser)
 {
-  int match_found = false;
-
-  for (int i = 0; mShellContext.Commands[i].Name != NULL; i++)
-  {
-    if (strcmp(argv[0], mShellContext.Commands[i].Name) == 0)
-    {
-      mShellContext.ExecutionStatus = mShellContext.Commands[i].CallBack(argc, &argv[0]);
-      match_found = true;
-      break;
-    }
-  }
-
-  if (match_found == false)
-  {
-    printf("\"%s\": command not found. Use \"help\" to list all command.\n", argv[0]);
-    mShellContext.ExecutionStatus = -1;
-  }
+   int Return = 0;
+   Command_ts const* oCommand = aData;
+   
+   if (oCommand != NULL)
+   {
+      char* key = (char*) aUser;
+      
+      if (key != NULL)
+      {
+         if (strcmp(oCommand->Name, key) == 0)
+         {
+            Return = 0;
+         }         
+      }
+      else
+      {
+         Return = -1;
+      }
+   }
+   else
+   {
+      Return = -1;
+   }
+   
+   return Return;
 }
 
-void mShell_Handler(void)
+int mShell_strcmp(const void *a, const void *b) 
 {
-	int argc = 0;
-	char* argv[SHELL_MAX_NUM_PARAMS];
-	printf("Shell_Handler\n");
+   return strcmp(*(const char **)a, *(const char **)b);
+}
 
-	ShellLine_ts Line = {0};
-	do
-	{
-		mShell_Prompt();
+static void mShell_Execute(int argc, char **argv) 
+{
+   
 
-		memset(&Line, 0, sizeof(ShellLine_ts) );
+   
 
-		while (mShellContext.IsExecute == false)
-		{
-			int  InByte = getchar();
+      //const char *words[] = { "apple", "banana", "cherry", "date", "grape", "mango", "orange" };
+      //size_t n = sizeof(words) / sizeof(words[0]);
+      
+      //const char *key = "cherry";
+      //char **result = (char **)bsearch(argv[0], mShell.Commands, Array_Count(mShell.Commands), sizeof(char*), mShell_strcmp);
 
-			if (InByte != EOF)
-			{
-				mShellContext.IsExecute = true;
-			}
-		}
-
-		// parse the line_buff
-		argc = mShell_ParseLine(argv, Line.Buffer, SHELL_MAX_NUM_PARAMS);
-
-		  // execute the parsed commands
-		  if (argc > 0)
-		  {
-			  mShell_Execute(argc, argv);
-		  }
-
-	} while (mShell_IsEnable() == SHELL_FLAG_ACTIVE);
+   //mShell.Commands
+   // Check, if the last "parameter" starts with a "&" - this would cause to start the function in an own thread.
+   // Perform the check before "parameter grouping" to be able to easily escape a real & parameter by "&".
+   
+   // Check, if the last but one entry is a ">" or ">>" - in this case, we have to redirect the output to a file instead of stdout
+   
+      /*
+   int match_found = false;
+   
+   for (int i = 0; table[i].Name != NULL; i++) 
+   {
+      if (strcmp(argv[0], table[i].Name) == 0) 
+      {
+         __cmd_exec_status = table[i].CallBack(argc, &argv[0]);
+         match_found = TRUE;
+         break;
+      }
+   }
+   
+   if (match_found == FALSE) 
+   {
+      printf("\"%s\": command not found. Use \"help\" to list all command.\n", argv[0]);
+      __cmd_exec_status = -1;
+   }
+   */
 }
 
 
-void SHELL_ADD_CMD(const char *name, const char* help, CommandCallBack aCommand)
+int mShell_SortUp(void const* va, void const* vb)
 {
-
-    if(mShellContext.CommandIndex < SHELL_MAX_COMMANDS)
-    {
-    	mShellContext.Commands[mShellContext.CommandIndex].Name = name;
-        mShellContext.Commands[mShellContext.CommandIndex].Help = help;
-        mShellContext.Commands[mShellContext.CommandIndex].CallBack = aCommand;
-        mShellContext.CommandIndex++;
-    }
+   Command_ts const *pa = (Command_ts*)va;
+   Command_ts const *pb = (Command_ts*)vb;
+   
+   return strcmp(pa->Name, pb->Name);
 }
 
-int Help_Handler(int argc, char **argv)
+void mShell_SortCommandList(void)
 {
-  int i = 0;
-  /* Default to Verbose */
-  bool verbose = true;
+   Array_Sort(mShell.Commands, mShell_SortUp);
+}
 
-  if (argc > 1 && (strcmp(argv[1], "-l")==0))
-  {
-    verbose = false;
-  }
-  else
-  {
-    printf("use: help -l for list only.\n\n");
-  }
+void SHELL_ADD_CMD(const char* aName, const char* aHelp, ShellCallBack aCommand) 
+{
+   if(aName == NULL)
+   {
+      FAILURE(SHELL_ERR_INVALID_PARAM);
+   }
+   else if(aHelp == NULL)
+   {
+      FAILURE(SHELL_ERR_INVALID_PARAM);
+   }
+   else if(aCommand == NULL)
+   {
+      FAILURE(SHELL_ERR_INVALID_PARAM);
+   }
+   else 
+   {
+      //printf("ADD(.Name = %s\n", aName);
+      if( Array_Count(mShell.Commands) < SHELL_COMMAND_SIZE)
+      {
+         Command_ts  oCommand = {.Name = aName, .Help = aHelp, .CallBack = aCommand};
+         Array_Add(mShell.Commands, &oCommand);
+      }
+      else 
+      {
+         FAILURE(SHELL_ERR_MEMORY);
+      }
+      
+   }
+}
 
-  while (mShellContext.Commands[i].Name != NULL)
-  {
-    printf(mShellContext.Commands[i].Name);
+void Shell_Handler(void)
+{
+   mShell_Prompt();
+}
 
-    if (verbose)
-    {
-      printf("\n\t");
-      printf(mShellContext.Commands[i].Help);
-    }
+bool Shell_IsEnable(void)
+{
+   return true;
+}
 
-    printf("\n");
-    i++;
-  }
+void Shell_Enable(void)
+{
+}
 
-  return 0;
+void Shell_Disable(void)
+{
 }
 
 void Shell_Setup(void)
 {
-
-	if (mShellContext.IsSetup == false)
-	{
-		mShellContext.WorkDirectory = &__WORK_DIRECTRY_BUFFER__[0];
-		mShellContext.Commands = (ShellCommand_ts*)&__CMD_TABLE_START__;
-
-		mShell_SetDefaultDrive();
-
-		SHELL_ADD_CMD("help", "Prints all available commands", Help_Handler);
-
-		mShellContext.IsSetup = true;
-	}
-	iShell()->Handler = mShell_Handler;
-
+   if(mShell.IsSetup == false)
+   {
+      mShell.Commands = Array_Create( sizeof(Command_ts)) ;
+      mShell_SetDefaultDrive();
+      
+      mShell.IsSetup = true;
+   }
 }
+   

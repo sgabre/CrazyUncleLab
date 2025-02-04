@@ -1,0 +1,3 @@
+ADD_EXECUTABLE(ArraySuiteExe ArraySuite.c)
+TARGET_LINK_LIBRARIES(ArraySuiteExe ArrayLib UnityLib)
+ADD_TEST(ArrayTest ArraySuiteExe)

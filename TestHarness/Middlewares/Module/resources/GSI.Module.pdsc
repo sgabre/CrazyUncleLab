@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="PACK.xsd" schemaVersion="1.6.0">
+  <name>microtar</name>
+  <vendor>rxi</vendor>
+  <description>Microtar software component</description>
+  <!-- empty until the pack gets published -->
+  <url></url>
+  <license>License.txt</license>
+  <releases>
+    <release version="0.1.0" date="2017-01-16">
+      Initial Release
+    </release>
+  </releases>
+
+  <components>
+    <component Cclass="SOUP" Cgroup="Microtar" Cversion="0.1.0">
+      <description>Microtar</description>
+      <files>
+		<file category="doc" name="Microtar.chm"/>
+        <file category="sourceC" name="Source/microtar.c"/>
+        <file category="header"  name="Source/microtar.h"/>        
+      </files>
+    </component>
+  </components>
+
+</package>
