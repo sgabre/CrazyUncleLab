@@ -63,3 +63,12 @@ The default structure when you are using STM32CubeMX is as follows:
 |Pin Number  |  Pin Name     | Signal On Pin |  Software Name  |
 | ------------- | ------------- |------------- | -------------   |
 |2            | PC13          | PC13-ANTI_TAMP| B1
+
+
+
+|Platform        |  Architecture  | Toolchain      |
+|----------------|----------------|----------------|
+|Pi 1, Pi Zero, Pi Zero W	| ARMv6	| gcc-arm-linux-gnueabihf |
+|Pi 2, Pi 3 (32-bit)	|ARMv7	| gcc-arm-linux-gnueabihf |
+|Pi 3 (64-bit), Pi 4, Pi 5	| ARMv8 (AArch64)	| gcc-aarch64-linux-gnu |
+|STM32F401RE | ARM | gcc-arm-none-eabi.cmake |
