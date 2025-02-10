@@ -16,7 +16,9 @@ Configuration Package
 
 - Software Component 
    * Compilation
+   * Static Code Analysis
    * Installation
+   * Build Software Detailled Design (Doxygen)
    * Unit Testing (Unity, CMock, ...)
    * Component Testing (Unity, CMock, ...)
 - Compiler Bootloader
