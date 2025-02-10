@@ -23,6 +23,9 @@ A Software Package is a collection of software components bundled together for d
 An Update Package refers to a collection of files, resources, and instructions designed to update an existing software system to a newer version. It typically contains new features, bug fixes, security patches, and sometimes changes in configuration or system settings. The purpose of an update package is to improve or enhance the software without requiring a complete reinstallation.
 
 ##  Configuration Package
+
+A Configuration Package refers to a set of files or data that define the configuration settings and parameters for a system or application. It is used to customize the behavior or setup of software or hardware components, ensuring they operate according to specific user requirements or environmental conditions. In embedded systems or software development, a configuration package typically contains the information needed to tailor the system's settings without modifying the core software.
+
 - Buffer Overflow: Occurs when a program writes more data to a buffer than it can hold, leading to memory corruption or security vulnerabilities.	
 - Stack Overflow: Happens when a program exceeds the allocated stack memory, often due to deep recursion or excessive local variable use, causing crashes.	
 - Memory Leak:	Occurs when a program allocates memory but never releases it, leading to increased memory usage over time and potential system slowdowns or crashes.	
