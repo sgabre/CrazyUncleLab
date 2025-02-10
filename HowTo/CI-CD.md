@@ -14,7 +14,7 @@ A software component in the context of embedded systems is a modular, self-conta
 
 ## Software Unit 
 
-A software unit refers to the smallest testable part of a software system. It is often the fundamental building block of a larger system or module, and it typically consists of a single function, method, or class that performs a specific task. In the context of embedded systems or software engineering, a software unit is generally designed to encapsulate a single responsibility, making it independently testable and maintainable.
+A software unit refers to the smallest testable part of a software system. It is often the fundamental building block of a larger system or module, and it typically consists of a single function or method that performs a specific task. In the context of embedded systems, a software unit is generally designed to encapsulate a single responsibility, making it independently testable and maintainable.
 
 ## Delivery Package
 
