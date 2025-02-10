@@ -21,6 +21,8 @@ le but c'est de reflechier et de definir qu'elle sont les étapes pour un projet
    * Build Software Detailled Design (Doxygen)
    * Unit Testing (Unity, CMock, ...)
    * Component Testing (Unity, CMock, ...)
+   * Code Coverage
+   * Code Size reporter
 - Compiler Bootloader
 - Compiler Application
 - Integration testing ()
