@@ -42,13 +42,6 @@ An Update Package refers to a collection of files, resources, and instructions d
 
 A Configuration Package refers to a set of files or data that define the configuration settings and parameters for a system or application. It is used to customize the behavior or setup of software or hardware components, ensuring they operate according to specific user requirements or environmental conditions. In embedded systems or software development, a configuration package typically contains the information needed to tailor the system's settings without modifying the core software.
 
-- Buffer Overflow: Occurs when a program writes more data to a buffer than it can hold, leading to memory corruption or security vulnerabilities.	
-- Stack Overflow: Happens when a program exceeds the allocated stack memory, often due to deep recursion or excessive local variable use, causing crashes.	
-- Memory Leak:	Occurs when a program allocates memory but never releases it, leading to increased memory usage over time and potential system slowdowns or crashes.	
-- Null Pointer Dereference: Happens when a program attempts to read or write memory using a pointer that has not been initialized (i.e., points to NULL), leading to undefined behavior or crashes.
-- Dangling Pointer: Occurs when a pointer still references memory that has already been freed, leading to unpredictable behavior, crashes, or data corruption.
-- Uninitialized Memory Access: Happens when a program reads a variable before it has been assigned a value, leading to unpredictable or incorrect behavior.
-- Heap Corruption: Occurs when a program writes outside allocated heap memory, modifying adjacent memory blocks and causing instability.
 
 
 # Roadmap
@@ -115,6 +108,14 @@ Focuses on functionality, performance, and usability to ensure the system behave
 | Dangling Pointers	| Dynamic Execution Tracing | 
 | Uninitialized Memory Access	| Static Analysis | 
 | Heap Corruption	| Dynamic Memory Checks | 
+
+- Buffer Overflow: Occurs when a program writes more data to a buffer than it can hold, leading to memory corruption or security vulnerabilities.	
+- Stack Overflow: Happens when a program exceeds the allocated stack memory, often due to deep recursion or excessive local variable use, causing crashes.	
+- Memory Leak:	Occurs when a program allocates memory but never releases it, leading to increased memory usage over time and potential system slowdowns or crashes.	
+- Null Pointer Dereference: Happens when a program attempts to read or write memory using a pointer that has not been initialized (i.e., points to NULL), leading to undefined behavior or crashes.
+- Dangling Pointer: Occurs when a pointer still references memory that has already been freed, leading to unpredictable behavior, crashes, or data corruption.
+- Uninitialized Memory Access: Happens when a program reads a variable before it has been assigned a value, leading to unpredictable or incorrect behavior.
+- Heap Corruption: Occurs when a program writes outside allocated heap memory, modifying adjacent memory blocks and causing instability.
 
 
 
