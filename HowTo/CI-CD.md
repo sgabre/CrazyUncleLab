@@ -8,7 +8,9 @@ le but c'est de reflechier et de definir qu'elle sont les étapes pour un projet
 
 A software system is a broader term that refers to a collection of software components working together to achieve a specific goal or function. A software system can consist of multiple layers, including application software, middleware, libraries, and utilities.
 
-- Software Component: (Board Component)
+## Software Component
+
+A software component in the context of embedded systems is a modular, self-contained unit of software that provides specific functionality within a larger system. It is typically designed to be reusable, maintainable, and replaceable without significantly impacting the overall system. Components often communicate with each other through well-defined interfaces.
 
 ## Delivery Package
 
