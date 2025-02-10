@@ -66,6 +66,20 @@ Focuses on functionality, performance, and usability to ensure the system behave
 | Simulation & Emulation |Test software on simulated hardware before real deployment | QEMU, Renode, Proteus|	
 
 
+# Which Memory Issues need to be Detect?
+
+|Issue	|Detected by   | 
+| -------------          | ------------- |
+| Buffer Overflow	| Static & Dynamic Analysis | 
+| Stack Overflow	| Dynamic Analysis & Stack Monitoring | 
+| Memory Leaks	| Dynamic Analysis & Heap Tracking | 
+| Null Pointer Dereference	| Static Analysis | 
+| Dangling Pointers	| Dynamic Execution Tracing | 
+| Uninitialized Memory Access	| Static Analysis | 
+| Heap Corruption	| Dynamic Memory Checks | 
+
+
+
 ## Validation Process
 
 |Technique               	|  Purpose     | Tools Used| 
