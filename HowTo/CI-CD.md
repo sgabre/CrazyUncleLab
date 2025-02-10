@@ -74,6 +74,19 @@ Focuses on functionality, performance, and usability to ensure the system behave
 | EMC Testing			| Verify electromagnetic compatibility in industrial environments		| Anechoic Chambers, EMC Test Labs| 
 		
 
+## Architecture
+
+@startuml
+
+node "Microcontrler" {
+  [Bootloader]
+  [Application] 
+}
+
+@enduml
+
+
+
 		
 		
 	
