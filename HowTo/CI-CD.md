@@ -26,6 +26,7 @@ le but c'est de reflechier et de definir qu'elle sont les étapes pour un projet
 - Compiler Bootloader
 - Compiler Application
 - Integration testing ()
+    * Device Programming (J-Tag Flash )
     * Component integration testing
     * System integration testing
 - System testing
