@@ -10,6 +10,13 @@ le but c'est de reflechier et de definir qu'elle sont les étapes pour un projet
 - Software Package
 - Update Package
 - Configuration Package
+- Buffer Overflow: Occurs when a program writes more data to a buffer than it can hold, leading to memory corruption or security vulnerabilities.	
+- Stack Overflow: Happens when a program exceeds the allocated stack memory, often due to deep recursion or excessive local variable use, causing crashes.	
+- Memory Leak:	Occurs when a program allocates memory but never releases it, leading to increased memory usage over time and potential system slowdowns or crashes.	
+- Null Pointer Dereference: Happens when a program attempts to read or write memory using a pointer that has not been initialized (i.e., points to NULL), leading to undefined behavior or crashes.
+- Dangling Pointer: Occurs when a pointer still references memory that has already been freed, leading to unpredictable behavior, crashes, or data corruption.
+- Uninitialized Memory Access: Happens when a program reads a variable before it has been assigned a value, leading to unpredictable or incorrect behavior.
+- Heap Corruption: Occurs when a program writes outside allocated heap memory, modifying adjacent memory blocks and causing instability.
 
 
 # Roadmap
