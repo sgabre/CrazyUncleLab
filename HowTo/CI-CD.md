@@ -12,6 +12,10 @@ A software system is a broader term that refers to a collection of software comp
 
 A software component in the context of embedded systems is a modular, self-contained unit of software that provides specific functionality within a larger system. It is typically designed to be reusable, maintainable, and replaceable without significantly impacting the overall system. Components often communicate with each other through well-defined interfaces.
 
+## Software Unit 
+
+A software unit refers to the smallest testable part of a software system. It is often the fundamental building block of a larger system or module, and it typically consists of a single function, method, or class that performs a specific task. In the context of embedded systems or software engineering, a software unit is generally designed to encapsulate a single responsibility, making it independently testable and maintainable.
+
 ## Delivery Package
 
 A Delivery Package refers to a collection of software components, documents, tools, and other necessary items bundled together and provided as a complete unit to a customer, stakeholder, or as part of a project. The contents of a delivery package are designed to enable the recipient to install, configure, or deploy the software in a specific environment, ensuring that everything needed for successful deployment and operation is included.
