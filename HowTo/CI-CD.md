@@ -57,6 +57,18 @@ Focuses on functionality, performance, and usability to ensure the system behave
 | Formal Verification| Mathematical proof of correctness for safety-critical software | SPIN, TLA+, Model Checking |
 | Simulation & Emulation |Test software on simulated hardware before real deployment | QEMU, Renode, Proteus|	
 
+
+## Validation Process
+
+|Technique               	|  Purpose     | Tools Used| 
+| ------------------------------| ----------------------------------------------------------------------------- |--------------------------------------------- |
+| System Testing		| Validate complete firmware, hardware, and software integration		| Automated Test Benches, LabView| 
+| Functional Testing		| Check if all features work as expected					| Test scripts in Python, Squish| 
+| Performance Testing		| Test system response time, power consumption, efficiency			| NI TestStand, Power Profiler Kit| 
+| Stress & Load Testing		| Check system behavior under high data rates, long operation			| 	JMeter, Locust| 
+| Field Testing			| Deploy in real-world conditions to verify meter readings, RF signal quality	| LoRa Gateway Monitoring, Drive Tests| 
+| Compliance Testing		| Ensure compliance with industrial standards (IEC, DLMS, MID)			| Rohde & Schwarz, Keysight Spectrum Analyzers| 
+| EMC Testing			| Verify electromagnetic compatibility in industrial environments		| Anechoic Chambers, EMC Test Labs| 
 		
 
 		
