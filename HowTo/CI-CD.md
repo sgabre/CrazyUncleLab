@@ -22,14 +22,14 @@ le but c'est de reflechier et de definir qu'elle sont les étapes pour un projet
 # Roadmap
 
 - Software Component 
-   * Compilation
+   * Build/Compile the component (*.a, *.lib, *.so, *.dll, ...)
+   * Code Size reporter
    * Static Code Analysis
-   * Installation
    * Build Software Detailled Design (Doxygen)
    * Unit Testing (Unity, CMock, ...)
    * Component Testing (Unity, CMock, ...)
-   * Code Coverage
-   * Code Size reporter
+   * Code Coverage (branche coverage, statement coverage, condition converage)
+   * Install/Publish Pack (Source code , Debug Library, Release Library, inclusion)
 - Compiler Bootloader
 - Compiler Application
 - Integration testing ()
