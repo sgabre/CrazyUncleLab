@@ -46,11 +46,19 @@ Focuses on functionality, performance, and usability to ensure the system behave
 
 ## Verification Process
 
-Technique	Purpose	Tools Used
-Static Code Analysis	Detect coding violations (MISRA, CERT C)	Cppcheck, Coverity, PC-lint
-Unit Testing	Validate individual software components	Unity (C), Google Test (C++), Ceedling
-Integration Testing	Check interaction between software modules	Hardware-in-the-Loop (HIL), CANoe, Robot Framework
-Requirement Traceability	Ensure all requirements are implemented	DOORS, Polarion
-Code Review & Walkthroughs	Ensure design and implementation correctness	GitHub Code Review, Gerrit
-Formal Verification	Mathematical proof of correctness for safety-critical software	SPIN, TLA+, Model Checking
-Simulation & Emulation	Test software on simulated hardware before real deployment
+
+|Technique               |  Purpose     | Tools Used| 
+| -------------          | ------------- |------------- |
+| Static Code Analysis   | Detect coding violations (MISRA, CERT C)           |	Cppcheck, Coverity, PC-lint      |
+| Unit Testing           | Validate individual software components           |Unity (C), Google Test (C++), Ceedling      |
+| Integration Testing    | Check interaction between software modules  | Hardware-in-the-Loop (HIL), CANoe, Robot Framework  |
+| Requirement Traceability |Ensure all requirements are implemented |	DOORS, Polarion |
+| Code Review & Walkthroughs | Ensure design and implementation correctness | GitHub Code Review, Gerrit |
+| Formal Verification| Mathematical proof of correctness for safety-critical software | SPIN, TLA+, Model Checking |
+| Simulation & Emulation |Test software on simulated hardware before real deployment | QEMU, Renode, Proteus|	
+
+		
+
+		
+		
+	
