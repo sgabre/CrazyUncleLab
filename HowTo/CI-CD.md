@@ -30,8 +30,7 @@ le but c'est de reflechier et de definir qu'elle sont les étapes pour un projet
    * Component Testing (Unity, CMock, ...)
    * Code Coverage (branche coverage, statement coverage, condition converage)
    * Install/Publish Pack (Source code , Debug Library, Release Library, inclusion)
-- Compiler Bootloader
-- Compiler Application
+- Build/Compile System Software
 - Integration testing ()
     * Device Programming (J-Tag Flash )
     * Component integration testing
