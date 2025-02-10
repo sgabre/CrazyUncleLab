@@ -73,7 +73,7 @@ Focuses on functionality, performance, and usability to ensure the system behave
 | Simulation & Emulation |Test software on simulated hardware before real deployment | QEMU, Renode, Proteus|	
 
 
-# Which Memory Issues need to be Detect?
+# Memory Verification
 
 |Issue	|Detected by   | 
 | -------------          | ------------- |
