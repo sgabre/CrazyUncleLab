@@ -2,7 +2,7 @@
 
 le but c'est de reflechier et de definir qu'elle sont les étapes pour un projet embarque pour faire de l'intégration et de déploiement continus.
 
-# Therm & definition
+# Term & Definition
 
 - Software System: A software system is a broader term that refers to a collection of software components working together to achieve a specific goal or function. A software system can consist of multiple layers, including application software, middleware, libraries, and utilities.
 - Software Component: (Board Component)
@@ -11,7 +11,10 @@ le but c'est de reflechier et de definir qu'elle sont les étapes pour un projet
 
 A Delivery Package refers to a collection of software components, documents, tools, and other necessary items bundled together and provided as a complete unit to a customer, stakeholder, or as part of a project. The contents of a delivery package are designed to enable the recipient to install, configure, or deploy the software in a specific environment, ensuring that everything needed for successful deployment and operation is included.
 
-- Software Package
+## Software Package
+
+A Software Package is a collection of software components bundled together for distribution, installation, and use. It typically includes executable files, configuration files, libraries, documentation, and other resources needed to run or use a particular software system or application. The purpose of a software package is to provide a ready-to-install, self-contained unit of software that can be deployed or used without requiring additional software components or manual setup.
+
 - Update Package
 - Configuration Package
 - Buffer Overflow: Occurs when a program writes more data to a buffer than it can hold, leading to memory corruption or security vulnerabilities.	
