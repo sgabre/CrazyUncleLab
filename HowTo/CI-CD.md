@@ -4,7 +4,10 @@ le but c'est de reflechier et de definir qu'elle sont les étapes pour un projet
 
 # Term & Definition
 
-- Software System: A software system is a broader term that refers to a collection of software components working together to achieve a specific goal or function. A software system can consist of multiple layers, including application software, middleware, libraries, and utilities.
+## Software System
+
+A software system is a broader term that refers to a collection of software components working together to achieve a specific goal or function. A software system can consist of multiple layers, including application software, middleware, libraries, and utilities.
+
 - Software Component: (Board Component)
 
 ## Delivery Package
@@ -15,8 +18,11 @@ A Delivery Package refers to a collection of software components, documents, too
 
 A Software Package is a collection of software components bundled together for distribution, installation, and use. It typically includes executable files, configuration files, libraries, documentation, and other resources needed to run or use a particular software system or application. The purpose of a software package is to provide a ready-to-install, self-contained unit of software that can be deployed or used without requiring additional software components or manual setup.
 
-- Update Package
-- Configuration Package
+## Update Package
+
+An Update Package refers to a collection of files, resources, and instructions designed to update an existing software system to a newer version. It typically contains new features, bug fixes, security patches, and sometimes changes in configuration or system settings. The purpose of an update package is to improve or enhance the software without requiring a complete reinstallation.
+
+##  Configuration Package
 - Buffer Overflow: Occurs when a program writes more data to a buffer than it can hold, leading to memory corruption or security vulnerabilities.	
 - Stack Overflow: Happens when a program exceeds the allocated stack memory, often due to deep recursion or excessive local variable use, causing crashes.	
 - Memory Leak:	Occurs when a program allocates memory but never releases it, leading to increased memory usage over time and potential system slowdowns or crashes.	
