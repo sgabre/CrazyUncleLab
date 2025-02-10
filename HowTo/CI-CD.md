@@ -4,7 +4,7 @@ le but c'est de reflechier et de definir qu'elle sont les étapes pour un projet
 
 # Therm & definition
 
-- Software System: A software system is a broader term that refers to a collection of software components working together to achieve a specific goal or function. A software system can consist of multiple layers, including system software (like bootloaders and RTOS), application software, middleware, libraries, and utilities.
+- Software System: A software system is a broader term that refers to a collection of software components working together to achieve a specific goal or function. A software system can consist of multiple layers, including application software, middleware, libraries, and utilities.
 - Software Component: (Board Component)
 - Delivery Package
 - Software Package
