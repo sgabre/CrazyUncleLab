@@ -6,7 +6,11 @@ le but c'est de reflechier et de definir qu'elle sont les étapes pour un projet
 
 - Software System: A software system is a broader term that refers to a collection of software components working together to achieve a specific goal or function. A software system can consist of multiple layers, including application software, middleware, libraries, and utilities.
 - Software Component: (Board Component)
-- Delivery Package
+
+## Delivery Package
+
+A Delivery Package refers to a collection of software components, documents, tools, and other necessary items bundled together and provided as a complete unit to a customer, stakeholder, or as part of a project. The contents of a delivery package are designed to enable the recipient to install, configure, or deploy the software in a specific environment, ensuring that everything needed for successful deployment and operation is included.
+
 - Software Package
 - Update Package
 - Configuration Package
@@ -72,7 +76,7 @@ Focuses on functionality, performance, and usability to ensure the system behave
 | Simulation & Emulation |Test software on simulated hardware before real deployment | QEMU, Renode, Proteus|	
 
 
-# Memory Verification
+## Memory Verification
 
 |Issue	|Detected by   | 
 | -------------          | ------------- |
