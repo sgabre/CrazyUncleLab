@@ -12,6 +12,12 @@ A software system is a broader term that refers to a collection of software comp
 
 A software component in the context of embedded systems is a modular, self-contained unit of software that provides specific functionality within a larger system. It is typically designed to be reusable, maintainable, and replaceable without significantly impacting the overall system. Components often communicate with each other through well-defined interfaces.
 
+## Software Module
+
+A software module is a self-contained, logically organized collection of software units (functions or methods) that work together to provide a specific, cohesive functionality or service within a larger system. A module is typically responsible for handling a particular aspect of the system, such as communication, data processing, or hardware control. It groups related software units into a single unit that can be developed, tested, and maintained independently of other modules in the system.
+
+
+
 ## Software Unit 
 
 A software unit refers to the smallest testable part of a software system. It is often the fundamental building block of a larger system or module, and it typically consists of a single function or method that performs a specific task. In the context of embedded systems, a software unit is generally designed to encapsulate a single responsibility, making it independently testable and maintainable.
