@@ -35,13 +35,16 @@ The difference between verification and validation is fundamental in engineering
 
 Ensures that the product is being developed correctly according to specifications, design documents, and requirements.
 Focuses on processes such as reviews, inspections, static analysis, and testing at the component level.
-Typically involves checking compliance with standards like IEC 62304 (medical software), DO-178C (avionics), or ISO 26262 (automotive).
+Typically involves checking compliance with standards.
 
 ## Validation – "Are we building the right product?"
 
 Ensures that the final product meets the user's needs and intended use.
 Involves system-level testing, integration tests, acceptance tests, and real-world trials.
 Focuses on functionality, performance, and usability to ensure the system behaves as expected in its actual operating environment.
+
+
+
 
 
 ## Verification Process
