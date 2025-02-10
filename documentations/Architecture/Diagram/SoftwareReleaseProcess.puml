@@ -1,1 +1,47 @@
+@startuml
+!define RECTANGLE class
 
+' Define the stages
+RECTANGLE Development {
+    :Code Writing;
+    :Unit Testing;
+    :Static Code Analysis;
+}
+
+RECTANGLE Integration {
+    :Integration Testing;
+    :Build Process;
+    :Continuous Integration (CI);
+}
+
+RECTANGLE PreRelease {
+    :QA Testing;
+    :Code Review;
+    :Static Code Analysis;
+    :Security & Compliance Checks;
+}
+
+RECTANGLE Packaging {
+    :Firmware/Binary Packaging;
+    :Delivery Package Creation;
+}
+
+RECTANGLE Deployment {
+    :OTA Update;
+    :Update Validation;
+}
+
+RECTANGLE PostRelease {
+    :Monitoring;
+    :Bug Fixes & Patches;
+}
+
+' Create the flow of the process
+Development -down-> Integration
+Integration -down-> PreRelease
+PreRelease -down-> Packaging
+Packaging -down-> Deployment
+Deployment -down-> PostRelease
+PostRelease -down-> Development : (Iterative Process)
+
+@enduml
