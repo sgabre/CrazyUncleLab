@@ -4,12 +4,12 @@ le but c'est de reflechier et de definir qu'elle sont les étapes pour un projet
 
 # Therm & definition
 
-System Software: (Bootloader, Application)
-Software Component: (Board Component)
-Delivery Package
-Software Package
-Update Package
-Configuration Package
+- System Software: (Bootloader, Application)
+- Software Component: (Board Component)
+- Delivery Package
+- Software Package
+- Update Package
+- Configuration Package
 
 
 # Roadmap
