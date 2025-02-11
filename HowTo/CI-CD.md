@@ -79,12 +79,7 @@ Ensures that the final product meets the user's needs and intended use.
 Involves system-level testing, integration tests, acceptance tests, and real-world trials.
 Focuses on functionality, performance, and usability to ensure the system behaves as expected in its actual operating environment.
 
-
-
-
-
 ## Verification Process
-
 
 |Technique               |  Purpose     | Tools Used| 
 | -------------          | ------------- |------------- |
@@ -134,127 +129,143 @@ Focuses on functionality, performance, and usability to ensure the system behave
 		
 # Software Test Life Cycle 
 
-## Requirement Analysis (Embedded Context)
+## Requirement Analysis
 
 📥 Inputs:
 
-Software Requirement Specification (SRS)
-Hardware Requirement Specification (HRS)
-Functional Safety Requirements (if applicable)
-Communication Protocol Specifications (I2C, SPI, CAN, UART, etc.)
-Power Consumption and Performance Requirements
-Compliance Standards (e.g., IEC 62304 for medical devices, DO-178C for avionics)
+- Software Requirement Specification (SRS)
+- Hardware Requirement Specification (HRS)
+- Functional Safety Requirements (if applicable)
+- Communication Protocol Specifications (I2C, SPI, CAN, UART, etc.)
+- Power Consumption and Performance Requirements
+- Compliance Standards (e.g., IEC 62304 for medical devices, DO-178C for avionics)
+  
 👤 Roles Involved:
 
-System Architect (Defines system requirements)
-Embedded Software Engineer (Understands firmware constraints)
-Test Manager / QA Lead (Defines testing scope)
+- System Architect (Defines system requirements)
+- Embedded Software Engineer (Understands firmware constraints)
+- Test Manager / QA Lead (Defines testing scope)
+  
 📤 Deliverables:
 
-Requirement Traceability Matrix (RTM)
-Testable Functional and Non-Functional Requirements Document
-Hardware-Software Interface Test Requirements
+- Requirement Traceability Matrix (RTM)
+- Testable Functional and Non-Functional Requirements Document
+- Hardware-Software Interface Test Requirements
 
-## Test Planning (Embedded Context)
+## Test Planning
 
 📥 Inputs:
 
-Test Requirements
-Embedded System Architecture
-Hardware Availability & Constraints
-Safety and Regulatory Compliance Needs
+- Test Requirements
+- Embedded System Architecture
+- Hardware Availability & Constraints
+- Safety and Regulatory Compliance Needs
+
 👤 Roles Involved:
 
-Test Manager / QA Lead
-Embedded Test Engineer
-Hardware Engineer
+- Test Manager / QA Lead
+- Embedded Test Engineer
+- Hardware Engineer
+
 📤 Deliverables:
 
-Embedded Test Strategy Document
-Test Plan Document
-Effort Estimation & Resource Planning
-Hardware Setup Plan (e.g., Oscilloscope, Logic Analyzer, Debugger, etc.)
-Automation Feasibility Report
-3. Test Case Development (Embedded Context)
+- Embedded Test Strategy Document
+- Test Plan Document
+- Effort Estimation & Resource Planning
+- Hardware Setup Plan (e.g., Oscilloscope, Logic Analyzer, Debugger, etc.)
+- Automation Feasibility Report
+  
+## Test Case Development
 
 📥 Inputs:
 
-Test Plan
-Firmware APIs & Communication Interfaces
-Hardware Design Documents (schematics, PCB layout)
+- Test Plan
+- Firmware APIs & Communication Interfaces
+- Hardware Design Documents (schematics, PCB layout)
+
 👤 Roles Involved:
 
-Embedded Software Test Engineer
-Firmware Developer
-Hardware Engineer
+- Embedded Software Test Engineer
+- Firmware Developer
+- Hardware Engineer
+
 📤 Deliverables:
 
-Manual & Automated Test Cases (covering real-time performance, interrupts, power consumption, etc.)
-Test Scripts for Automation (e.g., Python for serial interface, LabVIEW for hardware-in-loop testing)
-Boundary Value Analysis & Equivalence Class Test Cases
-Test Data Sets (for hardware sensors, ADC/DAC, etc.)
-4. Test Environment Setup (Embedded Context)
+- Manual & Automated Test Cases (covering real-time performance, interrupts, power consumption, etc.)
+- Test Scripts for Automation (e.g., Python for serial interface, LabVIEW for hardware-in-loop testing)
+- Boundary Value Analysis & Equivalence Class Test Cases
+- Test Data Sets (for hardware sensors, ADC/DAC, etc.)
+
+## Test Environment Setup
 
 📥 Inputs:
 
-Target Hardware (Prototype, Evaluation Board, Custom PCB)
-Debugger (e.g., J-Link, ST-Link)
-Test Bench Setup (Power supply, Oscilloscope, Logic Analyzer, Signal Generator)
-Software Tools (e.g., STM32CubeIDE, Keil, IAR, Segger RTT)
+- Target Hardware (Prototype, Evaluation Board, Custom PCB)
+- Debugger (e.g., J-Link, ST-Link)
+- Test Bench Setup (Power supply, Oscilloscope, Logic Analyzer, Signal Generator)
+- Software Tools (e.g., STM32CubeIDE, Keil, IAR, Segger RTT)
+
 👤 Roles Involved:
 
-Embedded Test Engineer
-Hardware Engineer
-DevOps Engineer (if CI/CD for firmware is used)
+- Embedded Test Engineer
+- Hardware Engineer
+- DevOps Engineer
+
 📤 Deliverables:
 
-Test Environment Readiness Report
-Flashed & Configured Hardware Test Setup
-Connectivity & Communication Verification (UART, SPI, CAN, etc.)
-5. Test Execution (Embedded Context)
+- Test Environment Readiness Report
+- Flashed & Configured Hardware Test Setup
+- Connectivity & Communication Verification (UART, SPI, CAN, etc.)
+
+## Test Execution (Embedded Context)
 
 📥 Inputs:
 
-Test Cases
-Configured Test Environment
-Firmware Image (Binary/Hex File)
+- Test Cases
+- Configured Test Environment
+- Firmware Image (Binary/Hex File)
+
 👤 Roles Involved:
 
-Embedded Software Test Engineer
-Firmware Developer
-Hardware Engineer
+- Embedded Software Test Engineer
+- Firmware Developer
+- Hardware Engineer
+
 📤 Deliverables:
 
-Pass/Fail Test Execution Report
-Defect Reports with Root Cause Analysis (RCA)
-Real-Time Behavior Logs (Jitter, Response Time, Memory Leaks, etc.)
-Regression Testing Results
-Power Consumption & Stress Test Reports
-6. Test Cycle Closure (Embedded Context)
+- Pass/Fail Test Execution Report
+- Defect Reports with Root Cause Analysis (RCA)
+- Real-Time Behavior Logs (Jitter, Response Time, Memory Leaks, etc.)
+- Regression Testing Results
+- Power Consumption & Stress Test Reports
+
+## Test Cycle Closure (Embedded Context)
 
 📥 Inputs:
 
-Test Execution Results
-Defect Reports
-Test Coverage Metrics
+- Test Execution Results
+- Defect Reports
+- Test Coverage Metrics
+  
 👤 Roles Involved:
 
-Test Manager
-Embedded Test Engineer
-Project Manager
+- Test Manager
+- Embedded Test Engineer
+- Project Manager
+
 📤 Deliverables:
 
-Final Test Summary Report
-Defect Density & Test Coverage Metrics
-Lessons Learned Document (for future projects)
-Archival of Test Artifacts (Logs, Test Scripts, Setup Configuration)
-Key Embedded System Testing Considerations
-Hardware-Software Integration Testing: Ensures firmware works with real hardware.
-Real-Time Performance Testing: Measures execution timing constraints and jitter.
-Power Consumption Testing: Ensures low power consumption in embedded systems.
-Interrupt & Exception Handling Testing: Verifies ISR execution timing and error handling.
-Protocol Testing: Validates communication via SPI, UART, CAN, I2C, etc.
-Compliance Testing: Ensures adherence to regulatory standards like IEC 62304 (medical), DO-178C (avionics), or ISO 26262 (automotive).
+- Final Test Summary Report
+- Defect Density & Test Coverage Metrics
+- Lessons Learned Document (for future projects)
+- Archival of Test Artifacts (Logs, Test Scripts, Setup Configuration)
+- Key Embedded System Testing Considerations
+- Hardware-Software Integration Testing: Ensures firmware works with real hardware.
+- Real-Time Performance Testing: Measures execution timing constraints and jitter.
+- Power Consumption Testing: Ensures low power consumption in embedded systems.
+- Interrupt & Exception Handling Testing: Verifies ISR execution timing and error handling.
+- Protocol Testing: Validates communication via SPI, UART, CAN, I2C, etc.
+- Compliance Testing: Ensures adherence to regulatory standards like IEC 62304 (medical), DO-178C (avionics), or ISO 26262 (automotive).
 
 		
 	
