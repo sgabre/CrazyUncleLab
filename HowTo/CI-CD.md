@@ -132,10 +132,19 @@ Focuses on functionality, performance, and usability to ensure the system behave
 | Compliance Testing		| Ensure compliance with industrial standards (IEC, DLMS, MID)			| Rohde & Schwarz, Keysight Spectrum Analyzers| 
 | EMC Testing			| Verify electromagnetic compatibility in industrial environments		| Anechoic Chambers, EMC Test Labs| 
 		
+# Software Test Life Cycle 
 
+## Requirement Analysis
 
+## Test Planning
 
+## Test Case Development
 
-		
+## Test Environment setup
+
+## Test Execution
+
+## Test Cycle Closure
+
 		
 	
