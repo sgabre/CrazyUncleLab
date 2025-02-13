@@ -127,6 +127,13 @@ Metrix
 - Code Coverage
 - Number Of Test Case (Total, Pass, Fail, Not Executed)
 
+Cyclomatic complexity Criteria
+
+1 - 10: Simple procedure, little risk
+11 - 20: More complex, moderate risk
+21 - 50: Complex, high risk
+> 50: Untestable code, very high risk
+
 Type
 
 - Weekly build/release
