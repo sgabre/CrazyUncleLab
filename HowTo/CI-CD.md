@@ -77,8 +77,8 @@ So basicaly, an embedded system is a device or a product.
 [INSERT IMAGE]
 
 - Requirement Analysis
-- System Design
-- Development
+- System Designs
+- Developments
 - Testing and Validation
 - Industrialization and Production
 - Deployment and Maintenance
