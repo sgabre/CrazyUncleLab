@@ -127,7 +127,7 @@ Metrix
 - Code Coverage
 - Number Of Test Case (Total, Pass, Fail, Not Executed)
 
-Cyclomatic complexity Criteria
+Cyclomatic complexity Assessment
 
 1 - 10: Simple procedure, little risk
 11 - 20: More complex, moderate risk
