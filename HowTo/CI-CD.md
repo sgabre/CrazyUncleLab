@@ -88,7 +88,35 @@ For each domain (**software**, **hardware**, and **mechanics**) in a Embedded Sy
 
 ## For the Software, What is the Development Life Cycle ? 
 
+- Software development planning
+- Software requirements analysis
+- Software Architectural design
+- Software detailed design
+- Software Unit implementation and verification
+- Software integration and integration testing
+- Software System testing
+- Software release
 
+### Software development planning
+
+- Process to be used in the development
+- Deliverables
+- Traceabilit between System Requirement, Software Requirement, Software System Test
+- Software configuration and change management
+
+### Software requirements analysis
+
+### Software Architectural design
+
+### Software detailed design
+
+### Software Unit implementation and verification
+
+### Software integration and integration testing
+
+### Software System testing
+
+###  Software Release
 
 ## Verification & Validation
 The difference between verification and validation is fundamental in engineering, software development, and quality assurance:
