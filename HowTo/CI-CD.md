@@ -70,6 +70,9 @@ A Configuration Package refers to a set of files or data that define the configu
 
 An embedded system is a dedicated computing system integrated into a device for a specific real-time function. It combines **software**, **hardware**, and **mechanics**, with performance and reliability constraints.
 
+
+
+## Verification & Validation
 The difference between verification and validation is fundamental in engineering, software development, and quality assurance:
 
 ## Verification – "Are we building the product right?"
