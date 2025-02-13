@@ -70,6 +70,16 @@ A Configuration Package refers to a set of files or data that define the configu
 
 An embedded system is a dedicated computing system integrated into a device for a specific real-time function. It combines **software**, **hardware**, and **mechanics**, with performance and reliability constraints.
 
+## What are the phases of an Embedded System Project ? 
+
+[INSERT IMAGE]
+
+- Requirement Analysis
+- System Design
+- Development
+- Testing and Validation
+- Industrialization and Production
+- Deployment and Maintenance
 
 
 ## Verification & Validation
