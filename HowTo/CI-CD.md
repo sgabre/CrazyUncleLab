@@ -118,6 +118,22 @@ For each domain (**software**, **hardware**, and **mechanics**) in a Embedded Sy
 
 ###  Software Release
 
+(CI/CD) = Compilation, Static Code Analysis, Metrix,  Flashing, Unit Testing, Component Testing, ... Packaging
+
+Metrix
+- Cyclomatic complexity
+- Ligne de Code Sources
+- Binaries Size (ROM, RAM)
+- Code Coverage
+- # Test Case (Total, Pass, Fail, Not Executed)
+
+Type
+
+- Weekly build/release
+- Sprint build/release
+- Milestone Build/release
+
+
 ## Verification & Validation
 The difference between verification and validation is fundamental in engineering, software development, and quality assurance:
 
