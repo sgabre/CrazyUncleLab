@@ -85,7 +85,8 @@ So basicaly, an embedded system is a device or a product.
 
 For each domain (**software**, **hardware**, and **mechanics**) in a Embedded System Project typically has its own Development Life Cycle.
 
-## What are Software Development Life Cycle ? 
+
+## For the Software, What is the Development Life Cycle ? 
 
 
 
