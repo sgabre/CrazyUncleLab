@@ -125,7 +125,7 @@ Metrix
 - Ligne de Code Sources
 - Binaries Size (ROM, RAM)
 - Code Coverage
-- # Test Case (Total, Pass, Fail, Not Executed)
+- Number Of Test Case (Total, Pass, Fail, Not Executed)
 
 Type
 
