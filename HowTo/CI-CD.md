@@ -129,10 +129,10 @@ Metrix
 
 Cyclomatic complexity Assessment
 
-1 - 10: Simple procedure, little risk
-11 - 20: More complex, moderate risk
-21 - 50: Complex, high risk
-> 50: Untestable code, very high risk
+* 1 - 10: Simple procedure, little risk
+* 11 - 20: More complex, moderate risk
+* 21 - 50: Complex, high risk
+* > 50: Untestable code, very high risk
 
 Type
 
