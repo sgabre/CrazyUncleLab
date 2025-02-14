@@ -5,17 +5,19 @@
 
 
 # Why is the goal of Unit Test in embedded Software ?
-The goal 
-Logic errors (incorrect algorithm implementation)
-Data handling errors (type conversion issues, incorrect data processing)
-Exception handling issues (poor error management)
-Unhandled edge cases (extreme values or special conditions)
-State inconsistencies (incorrect modifications to an object's state)
-Performance issues (if measured)
-API design flaws (incorrect input or output types)
-Regressions (previously fixed errors reappearing)
-Interaction issues with other components (e.g., database access problems)
-Missing or invalid values (invalid input or incorrect behavior with null values)
+
+The goal of the  Unit Tests is to Help Detect 
+
+- Logic errors (incorrect algorithm implementation)
+- Data handling errors (type conversion issues, incorrect data processing)
+- Exception handling issues (poor error management)
+- Unhandled edge cases (extreme values or special conditions)
+- State inconsistencies (incorrect modifications to an object's state)
+- Performance issues (if measured)
+- API design flaws (incorrect input or output types)
+- Regressions (previously fixed errors reappearing)
+- Interaction issues with other components (e.g., database access problems)
+- Missing or invalid values (invalid input or incorrect behavior with null values)
 
 # Which technic can i use to write a Unit Test  ?
 
