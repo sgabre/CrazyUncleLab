@@ -48,12 +48,8 @@ The goal of the  Unit Tests is to Help Detect
 
 # Unit Testing Criteria ?
 
-A criteria is use to determine 
-- 
-- 
-- 
-- 
-- 
+A Unit Testing Criteria is used to determine if the individual units of a software system function correctly in isolation. 
+It ensures that each function and by extention module behaves as expected under different conditions.
 
 | Type	| Embedded Systems	|
 |------|------------------|
