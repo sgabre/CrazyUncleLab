@@ -1,8 +1,6 @@
 # What is a Unit Test in embedded Software ?
 
 
-# What is the scope of a unit Test in embedded Software ?
-
 
 # Why is the goal of Unit Test in embedded Software ?
 
@@ -40,6 +38,7 @@ The goal of the  Unit Tests is to Help Detect
 
 # What are the Best Practices for Unit Testing ?
 
+- Cyclomatic complexity
 - Apply the 5W1H Approach (What, When, Where, Who, Why, How)
 - Follow the FIRST Principles (Fast, Isolated, Repeatable, Self-validating, Timely)
 - One Test = One Case (Keep Tests Simple and Focused)
