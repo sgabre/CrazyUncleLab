@@ -48,6 +48,15 @@ The goal of the  Unit Tests is to Help Detect
 
 # Unit Testing Criteria ?
 
+A criteria is use to determine 
+- Function coverage: how many of the functions defined have been called.
+- Statement coverage: how many of the statements in the program have been executed.
+- Branches coverage: how many of the branches of the control structures (if statements for instance) have been executed.
+- Condition coverage: how many of the boolean sub-expressions have been tested for a true and a false value.
+- Line coverage: how many of lines of source code have been tested.
+
+
+
 # How to make a Unit Testing ?
 
 
