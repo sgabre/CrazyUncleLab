@@ -4,7 +4,7 @@ le but c'est de reflechier et de definir qu'elle sont les étapes pour un projet
 
 # Term & Definition
 
-## Devise Software 
+## Device Software 
 
 ## Target Software 
 
