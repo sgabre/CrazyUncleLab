@@ -344,5 +344,25 @@ Focuses on functionality, performance, and usability to ensure the system behave
 - Protocol Testing: Validates communication via SPI, UART, CAN, I2C, etc.
 - Compliance Testing: Ensures adherence to regulatory standards like IEC 62304 (medical), DO-178C (avionics), or ISO 26262 (automotive).
 
-		
+# CI/CD Workflow
+
+## Pull
+
+## Build
+
+## Software Static Analysis
+
+## Software Unit Testing
+
+## Software Component Testing
+
+## Software Integration Testing
+
+## System Software Integration Testing
+
+## Software Acceptence Testing
+
+
+
+
 	
