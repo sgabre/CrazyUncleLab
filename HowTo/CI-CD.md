@@ -346,6 +346,23 @@ Focuses on functionality, performance, and usability to ensure the system behave
 
 # CI/CD Workflow
 
+## File Structures
+
+```
+<Project Name>
+|- Core
+|  \- Inc
+|  \- Src
+|  \- Startup 
+|- Drivers
+|  |- CMSIS
+|  |  \- Device
+|  |  \- Include
+|  \- STM32F4xx_HAL_Driver
+|  |  \- Inc
+|  |  \- Src
+```
+
 ## Pull
 
 ## Build
