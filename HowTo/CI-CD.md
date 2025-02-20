@@ -366,7 +366,7 @@ Focuses on functionality, performance, and usability to ensure the system behave
 |  \- Integration Testing
 |  |  \- Data Set
 |  |  \- CMock
-|  |  \- Test
+|  |  \- Component Under Test
 |  |  \- Reports
 |  \- System Integration Testing
 |  |  \- Data Set
