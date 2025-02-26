@@ -88,6 +88,8 @@ For each domain (**software**, **hardware**, and **mechanics**) in a Embedded Sy
 
 ## For the Software, What is the Development Life Cycle ? 
 
+[INSERT IMAGE]
+
 - Software development planning
 - Software requirements analysis
 - Software Architectural design
