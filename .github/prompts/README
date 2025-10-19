@@ -1,0 +1,44 @@
+# Prompts
+
+As a Firmware Project Leader, 
+I want to have the following prompts
+- create a OnePage Project
+- Create a Essential doc
+- Create a project chart
+- create a project plan,
+- create a product backlogs
+- create Epic Issue,
+- create User Story Issue,
+- create Task Issue
+
+
+As a Firmware Test Manager, 
+I want to have the following prompts
+- create a project test plan
+- create a sub-system test plan
+- create a Test Status Report
+- create a Test Completion Report
+
+
+As a Firmware Developper, 
+I want to have the following prompts
+- create-doyxgen: use to 
+- create-unit-test:
+- create-component-integration-test:
+- review-code:
+- 
+
+As a Firmware Tester, 
+I want to have the following prompts
+- create a Test Design Specification
+- create a Test Case Specification
+- create a Test Procedure Specification
+- create a Test Data Requirements
+- create a Test Environment Requirements
+- create a Test Data Readiness Report
+- create a Test Environment Readiness Report
+- create a Test Result
+- create a default report
+- create-system-test:
+- create-system-integration-test:
+- create-acceptance-test:
