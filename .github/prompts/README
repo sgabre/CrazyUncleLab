@@ -2,6 +2,7 @@
 
 As a Firmware Project Leader, 
 I want to have the following prompts
+- define project
 - create a OnePage Project
 - Create a Essential doc
 - Create a project chart
@@ -10,7 +11,9 @@ I want to have the following prompts
 - create Epic Issue,
 - create User Story Issue,
 - create Task Issue
-
+- create a project status report
+- create a project completion report
+- create a rojecg dashboard
 
 As a Firmware Test Manager, 
 I want to have the following prompts
@@ -18,7 +21,7 @@ I want to have the following prompts
 - create a sub-system test plan
 - create a Test Status Report
 - create a Test Completion Report
-
+- create a Test dashboard
 
 As a Firmware Developper, 
 I want to have the following prompts
@@ -26,7 +29,7 @@ I want to have the following prompts
 - create-unit-test:
 - create-component-integration-test:
 - review-code:
-- 
+- review-doxygen:
 
 As a Firmware Tester, 
 I want to have the following prompts

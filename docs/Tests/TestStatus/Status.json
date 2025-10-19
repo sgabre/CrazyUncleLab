@@ -1,0 +1,40 @@
+{
+  "Date": "2024-06-15",
+  "ProgressStatus": "On Track",
+  "BlockingFactors": "None",
+  "Risks": "None",
+  "PlannedTesting": "",
+  "retrospective": "",
+  "TestCase": {
+    "Daily": {
+      "Executed": 150,
+      "Passed": 150,
+      "Failed": 3,
+      "Skipped": 2
+    },
+    "Cumulative": {
+      "Planned": 1200,
+      "Executed": 1200,
+      "Passed": 1150,
+      "Failed": 30,
+      "Skipped": 20,
+      "Pending": 0
+    }
+  },
+  "Defect": {
+    "Daily": {
+      "New": 5,
+      "Resolved": 4,
+      "Retested": 3,
+      "Closed": 2,
+      "Reopened": 1
+    },
+    "Cumulative": {
+      "Defects": 100,
+      "Rejected": 90,
+      "Fixed": 10,
+      "Retested": 5,
+      "Pending": 5
+    }
+  }
+}
