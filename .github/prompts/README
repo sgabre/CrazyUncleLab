@@ -15,6 +15,67 @@ I want to have the following prompts
 - create a project completion report
 - create a rojecg dashboard
 
+As a Firmware Requirements Engineer, 
+I want to have the following prompts
+- create a System Requirements Specification
+- create a Sub-System Requirements Specification
+- create a Firmware Requirements Specification
+    * define Purpose & Scope
+    * define Resonsibilities
+    * define References
+    * define Terms & Definitions
+    * define User characteristics Requirements
+    * define System Overview
+    * define Functional Requirements
+    * define Operational Requirements 
+           + Interactions
+           + Interfaces
+           + Data(s)/Inputs/Outputs
+    * define Qualtity Requirements
+           +  define Performance Requirements
+           +  define Safety Requirements
+           +  define Security Requirements
+           + define Maintainability Requirements
+           + define Portability Requirements
+           + define Testability Requirements
+           + define Availability Requirements
+           + define Reliability Requirements
+     * define Non-Functional Requirements
+           + define Data Definition and Database requirement
+           + define User documentation requirements
+           + User maintenance requirements
+           + Regulatory/Legal Requirements
+    * define Data Dictionary
+    * define Alarm/Message Dictionary
+
+- create a Requirements Traceability Matrix
+
+As a Firmware Architect,
+I want to have the following prompts
+- create a Firmware Architecture Document
+    * define Purpose & Scope
+    * define Hardware Architecture
+    * define Firmware System Environment
+    * define Firmware Software Architecture
+    * define Functional Decomposition
+    * define Hazard Mitigation
+    * define Key Algorithms
+    * define Interface Mechanisms
+    * define Interface Data Structures
+    * define Error Handling
+
+As a Firmware Risk Engineer, 
+I want to have the following prompts
+- create a Firmware Hazard Analysis
+- create a Firmware FMEA
+- create a Firmware Fault Tree Analysis
+
+As a Frimware Security Engineer,
+I want to have the following prompts
+- create a Firmware Security Test Plan 
+- create a Firmware Security Analysis
+- create a Firmware Threat Model
+
 As a Firmware Test Manager, 
 I want to have the following prompts
 - create a project test plan
@@ -33,9 +94,15 @@ I want to have the following prompts
 
 As a Firmware Tester, 
 I want to have the following prompts
-- create a Test Design Specification
-- create a Test Case Specification
+
+- create a Test Design Specification 
+- define Test Conditions (input: Test Basics, Test Completion Criterion )
+- defien Test Coverage Items (inputs:)
+- define Test Cases
+- definie les Test Sets
 - create a Test Procedure Specification
+
+
 - create a Test Data Requirements
 - create a Test Environment Requirements
 - create a Test Data Readiness Report
