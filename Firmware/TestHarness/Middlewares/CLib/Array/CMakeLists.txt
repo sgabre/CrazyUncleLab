@@ -1,9 +1,0 @@
-ADD_LIBRARY(ArrayLib STATIC Array.c Error.c)
-TARGET_INCLUDE_DIRECTORIES(ArrayLib PUBLIC ${CMAKE_CURRENT_LIST_DIR} )
-
-
-
-#TARGET_LINK_LIBRARIES(ArrayLib PUBLIC)
-#SET(installable_libs ArrayLib)
-#INSTALL(TARGETS ${installable_libs} DESTINATION lib)
-#INSTALL(FILES Array.h DESTINATION include)

@@ -1,3 +1,0 @@
-ADD_EXECUTABLE(ShellSuiteExe ShellSuite.c)
-TARGET_LINK_LIBRARIES(ShellSuiteExe ArrayLib ShellLib UnityLib)
-ADD_TEST(ShellyTest ShellSuiteExe)

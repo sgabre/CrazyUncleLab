@@ -1,1 +1,0 @@
-add_subdirectory(IntegrationTest-Midleware-Module-TestSuite)

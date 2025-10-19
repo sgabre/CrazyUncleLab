@@ -1,5 +1,0 @@
-ADD_SUBDIRECTORY(Sources)
-ADD_SUBDIRECTORY(Test)
-  
-
-
